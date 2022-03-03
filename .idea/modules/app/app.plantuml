@@ -1,0 +1,220 @@
+@startuml
+
+title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
+
+  namespace com.itbird.design {
+    class com.itbird.design.BuildConfig {
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    class com.itbird.design.MainActivity {
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.demo {
+      abstract class com.itbird.design.chaiin.demo.Handler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.demo {
+      class com.itbird.design.chaiin.demo.Request {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.demo {
+      class com.itbird.design.chaiin.demo.RequestHandler1 {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.demo {
+      class com.itbird.design.chaiin.demo.RequestHandler2 {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.demo {
+      class com.itbird.design.chaiin.demo.RequestHandler3 {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      class com.itbird.design.chaiin.upgrade.ASystemUpgradeRequestHandler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      class com.itbird.design.chaiin.upgrade.BSystemUpgradeRequestHandler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      class com.itbird.design.chaiin.upgrade.CSystemUpgradeRequestHandler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      class com.itbird.design.chaiin.upgrade.InitUpgradeRequestHandler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      interface com.itbird.design.chaiin.upgrade.UpgradeErrorCode {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      class com.itbird.design.chaiin.upgrade.UpgradeManager {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      class com.itbird.design.chaiin.upgrade.UpgradeRequest {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      abstract class com.itbird.design.chaiin.upgrade.UpgradeRequestHandler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      interface com.itbird.design.chaiin.upgrade.UpgradeResultObservable {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin.upgrade {
+      class com.itbird.design.chaiin.upgrade.UpgradeResultObservableAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace observer.demo {
+      interface com.itbird.design.observer.demo.Observable {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace observer.demo {
+      class com.itbird.design.observer.demo.ObservableImpl {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace observer.demo {
+      interface com.itbird.design.observer.demo.Observer {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace observer.listadapter {
+      abstract class com.itbird.design.observer.listadapter.BaseAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace observer.listadapter {
+      class com.itbird.design.observer.listadapter.DataSetObservable {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace observer.listadapter {
+      abstract class com.itbird.design.observer.listadapter.DataSetObserver {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace observer.listadapter {
+      abstract class com.itbird.design.observer.listadapter.Observable {
+      }
+    }
+  }
+  
+
+  com.itbird.design.MainActivity .up.|> com.itbird.design.observer.demo.Observer
+  com.itbird.design.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.design.chaiin.demo.Handler o-- com.itbird.design.chaiin.demo.Handler : next
+  com.itbird.design.chaiin.demo.RequestHandler1 -up-|> com.itbird.design.chaiin.demo.Handler
+  com.itbird.design.chaiin.demo.RequestHandler2 -up-|> com.itbird.design.chaiin.demo.Handler
+  com.itbird.design.chaiin.demo.RequestHandler3 -up-|> com.itbird.design.chaiin.demo.Handler
+  com.itbird.design.chaiin.upgrade.ASystemUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.UpgradeRequestHandler
+  com.itbird.design.chaiin.upgrade.BSystemUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.UpgradeRequestHandler
+  com.itbird.design.chaiin.upgrade.CSystemUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.UpgradeRequestHandler
+  com.itbird.design.chaiin.upgrade.InitUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.UpgradeRequestHandler
+  com.itbird.design.chaiin.upgrade.UpgradeManager o-- com.itbird.design.chaiin.upgrade.UpgradeResultObservableAdapter : mAdapter
+  com.itbird.design.chaiin.upgrade.UpgradeRequestHandler o-- com.itbird.design.chaiin.upgrade.UpgradeRequestHandler : nextHandler
+  com.itbird.design.chaiin.upgrade.UpgradeResultObservableAdapter .up.|> com.itbird.design.chaiin.upgrade.UpgradeResultObservable
+  com.itbird.design.chaiin.upgrade.UpgradeResultObservableAdapter -up-|> android.database.Observable
+  com.itbird.design.observer.demo.ObservableImpl .up.|> com.itbird.design.observer.demo.Observable
+  com.itbird.design.observer.listadapter.BaseAdapter .up.|> android.widget.ListAdapter
+  com.itbird.design.observer.listadapter.BaseAdapter .up.|> android.widget.SpinnerAdapter
+  com.itbird.design.observer.listadapter.DataSetObservable -up-|> com.itbird.design.observer.listadapter.Observable
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
