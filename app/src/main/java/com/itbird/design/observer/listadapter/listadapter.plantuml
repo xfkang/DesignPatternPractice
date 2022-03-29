@@ -18,7 +18,6 @@ title __LISTADAPTER's Class Diagram__\n
           + notifyDataSetChanged()
           + notifyDataSetInvalidated()
           + registerDataSetObserver()
-          + setAutofillOptions()
           + unregisterDataSetObserver()
       }
     }
