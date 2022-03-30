@@ -1,9 +1,7 @@
-package com.itbird.design.principle.imageloader.v3;
+package com.itbird.design.principle.imageloader.v4;
 
-import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.Handler;
 import android.util.Log;
 import android.widget.ImageView;
 
@@ -21,47 +19,11 @@ import java.util.concurrent.Executors;
  * 下载功能类
  * Created by itbird on 2022/3/28
  */
-public class ImageDownload {
+public class MyImageDownload implements IDownloadRequest {
     private ExecutorService mExecutor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-    private Handler mHandler;
-    private final String TAG = ImageDownload.class.getSimpleName();
-    private DownloadCallback mDownloadCallback;
+    private final String TAG = MyImageDownload.class.getSimpleName();
 
-    public ImageDownload(Context context, DownloadCallback callback) {
-        mHandler = new Handler(context.getMainLooper());
-        mDownloadCallback = callback;
-    }
-
-    public interface DownloadCallback {
-        void downloadSuccess(String url, Bitmap bitmap);
-    }
-
-    /**
-     * 下载图片
-     *
-     * @param url
-     * @param imageView
-     */
-    public void downloadImage(String url, ImageView imageView) {
-        mExecutor.execute(new Runnable() {
-            @Override
-            public void run() {
-                Bitmap bitmap = downloadUrlBitmap(url);
-                Log.e(TAG, "url = " + url);
-                Log.e(TAG, "" + bitmap.getByteCount());
-
-                //cackback主线程
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        imageView.setImageBitmap(bitmap);
-                    }
-                });
-                if (mDownloadCallback != null) {
-                    mDownloadCallback.downloadSuccess(url, bitmap);
-                }
-            }
-        });
+    public MyImageDownload() {
     }
 
     /**
@@ -92,5 +54,20 @@ public class ImageDownload {
             CloseUtils.close(in);
         }
         return bitmap;
+    }
+
+    @Override
+    public void download(String url, DownloadCallback<Bitmap> callback) {
+        mExecutor.execute(new Runnable() {
+            @Override
+            public void run() {
+                Bitmap bitmap = downloadUrlBitmap(url);
+                Log.e(TAG, "url = " + url);
+                Log.e(TAG, "" + bitmap.getByteCount());
+                if (callback != null) {
+                    callback.downloadSuccess(url, bitmap);
+                }
+            }
+        });
     }
 }

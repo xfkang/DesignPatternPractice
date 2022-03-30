@@ -1,4 +1,4 @@
-package com.itbird.design.principle.imageloader.v3;
+package com.itbird.design.principle.imageloader.v4;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

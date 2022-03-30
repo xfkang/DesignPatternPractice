@@ -9,6 +9,8 @@ import android.util.Log;
 import android.util.LruCache;
 import android.widget.ImageView;
 
+import com.itbird.design.utils.CloseUtils;
+
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -137,13 +139,7 @@ public class ImageLoader {
             if (urlConnection != null) {
                 urlConnection.disconnect();
             }
-            try {
-                if (in != null) {
-                    in.close();
-                }
-            } catch (final IOException e) {
-                e.printStackTrace();
-            }
+            CloseUtils.close(in);
         }
         return bitmap;
     }
