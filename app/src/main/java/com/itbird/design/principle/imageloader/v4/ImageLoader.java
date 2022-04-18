@@ -11,6 +11,7 @@ import java.lang.ref.WeakReference;
 
 /**
  * 自定义图片加载框架
+ * imageloader优化，分离图片下载模块，实现下载模块可以自定义更换
  * Created by itbird on 2022/3/28.
  */
 public class ImageLoader {

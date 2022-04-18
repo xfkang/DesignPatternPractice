@@ -4,6 +4,7 @@ import java.io.Closeable;
 import java.io.IOException;
 
 /**
+ * 接口隔离原则
  * Created by itbird on 2022/3/30
  */
 public class CloseUtils {

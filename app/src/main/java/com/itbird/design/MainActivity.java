@@ -14,7 +14,7 @@ import com.itbird.design.chaiin.demo.Request;
 import com.itbird.design.chaiin.demo.RequestHandler1;
 import com.itbird.design.chaiin.demo.RequestHandler2;
 import com.itbird.design.chaiin.demo.RequestHandler3;
-import com.itbird.design.chaiin.upgrade.UpgradeManager;
+import com.itbird.design.chaiin.upgrade.v1.UpgradeManager;
 import com.itbird.design.observer.demo.ObservableImpl;
 import com.itbird.design.observer.demo.Observer;
 import com.itbird.design.principle.imageloader.v3.DiskCache;

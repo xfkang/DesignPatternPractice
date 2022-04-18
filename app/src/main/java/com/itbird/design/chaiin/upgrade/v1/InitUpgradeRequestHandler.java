@@ -1,4 +1,4 @@
-package com.itbird.design.chaiin.upgrade;
+package com.itbird.design.chaiin.upgrade.v1;
 
 import android.text.TextUtils;
 import android.util.Log;

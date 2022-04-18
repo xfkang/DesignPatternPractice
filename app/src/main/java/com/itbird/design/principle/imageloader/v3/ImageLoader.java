@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 /**
  * 自定义图片加载框架
+ * 开闭原则、里氏代换原则、依赖倒置原则、单一职责原则
  * Created by itbird on 2022/3/28.
  */
 public class ImageLoader implements ImageDownload.DownloadCallback {

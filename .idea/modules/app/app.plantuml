@@ -67,80 +67,80 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      class com.itbird.design.chaiin.upgrade.ASystemUpgradeRequestHandler {
+    namespace chaiin.upgrade.v1 {
+      class com.itbird.design.chaiin.upgrade.v1.ASystemUpgradeRequestHandler {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      class com.itbird.design.chaiin.upgrade.BSystemUpgradeRequestHandler {
+    namespace chaiin.upgrade.v1 {
+      class com.itbird.design.chaiin.upgrade.v1.BSystemUpgradeRequestHandler {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      class com.itbird.design.chaiin.upgrade.CSystemUpgradeRequestHandler {
+    namespace chaiin.upgrade.v1 {
+      class com.itbird.design.chaiin.upgrade.v1.CSystemUpgradeRequestHandler {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      class com.itbird.design.chaiin.upgrade.InitUpgradeRequestHandler {
+    namespace chaiin.upgrade.v1 {
+      class com.itbird.design.chaiin.upgrade.v1.InitUpgradeRequestHandler {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      interface com.itbird.design.chaiin.upgrade.UpgradeErrorCode {
+    namespace chaiin.upgrade.v1 {
+      interface com.itbird.design.chaiin.upgrade.v1.UpgradeErrorCode {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      class com.itbird.design.chaiin.upgrade.UpgradeManager {
+    namespace chaiin.upgrade.v1 {
+      class com.itbird.design.chaiin.upgrade.v1.UpgradeManager {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      class com.itbird.design.chaiin.upgrade.UpgradeRequest {
+    namespace chaiin.upgrade.v1 {
+      class com.itbird.design.chaiin.upgrade.v1.UpgradeRequest {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      abstract class com.itbird.design.chaiin.upgrade.UpgradeRequestHandler {
+    namespace chaiin.upgrade.v1 {
+      abstract class com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      interface com.itbird.design.chaiin.upgrade.UpgradeResultObservable {
+    namespace chaiin.upgrade.v1 {
+      interface com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservable {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade {
-      class com.itbird.design.chaiin.upgrade.UpgradeResultObservableAdapter {
+    namespace chaiin.upgrade.v1 {
+      class com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter {
       }
     }
   }
@@ -269,6 +269,62 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   namespace com.itbird.design {
     namespace principle.imageloader.v3 {
       class com.itbird.design.principle.imageloader.v3.MemoryCache {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.imageloader.v4 {
+      class com.itbird.design.principle.imageloader.v4.DiskCache {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.imageloader.v4 {
+      interface com.itbird.design.principle.imageloader.v4.DownloadCallback {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.imageloader.v4 {
+      interface com.itbird.design.principle.imageloader.v4.ICache {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.imageloader.v4 {
+      interface com.itbird.design.principle.imageloader.v4.IDownloadRequest {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.imageloader.v4 {
+      class com.itbird.design.principle.imageloader.v4.ImageLoader {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.imageloader.v4 {
+      class com.itbird.design.principle.imageloader.v4.MemoryCache {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.imageloader.v4 {
+      class com.itbird.design.principle.imageloader.v4.MyImageDownload {
       }
     }
   }
@@ -410,6 +466,70 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   }
   
 
+  namespace com.itbird.design {
+    namespace principle.mvp.v3 {
+      abstract class com.itbird.design.principle.mvp.v3.BaseActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.mvp.v3 {
+      abstract class com.itbird.design.principle.mvp.v3.BaseFragment {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.mvp.v3 {
+      abstract class com.itbird.design.principle.mvp.v3.BasePresenter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.mvp.v3 {
+      interface com.itbird.design.principle.mvp.v3.IPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.mvp.v3 {
+      class com.itbird.design.principle.mvp.v3.TaskMyActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.mvp.v3 {
+      interface com.itbird.design.principle.mvp.v3.TaskMyContract {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace principle.mvp.v3 {
+      class com.itbird.design.principle.mvp.v3.TaskMyPresenter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace utils {
+      class com.itbird.design.utils.CloseUtils {
+      }
+    }
+  }
+  
+
   com.itbird.design.APP -up-|> android.app.Application
   com.itbird.design.MainActivity .up.|> com.itbird.design.UIHandler.IHandler
   com.itbird.design.MainActivity .up.|> com.itbird.design.observer.demo.Observer
@@ -420,14 +540,14 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.chaiin.demo.RequestHandler1 -up-|> com.itbird.design.chaiin.demo.Handler
   com.itbird.design.chaiin.demo.RequestHandler2 -up-|> com.itbird.design.chaiin.demo.Handler
   com.itbird.design.chaiin.demo.RequestHandler3 -up-|> com.itbird.design.chaiin.demo.Handler
-  com.itbird.design.chaiin.upgrade.ASystemUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.UpgradeRequestHandler
-  com.itbird.design.chaiin.upgrade.BSystemUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.UpgradeRequestHandler
-  com.itbird.design.chaiin.upgrade.CSystemUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.UpgradeRequestHandler
-  com.itbird.design.chaiin.upgrade.InitUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.UpgradeRequestHandler
-  com.itbird.design.chaiin.upgrade.UpgradeManager o-- com.itbird.design.chaiin.upgrade.UpgradeResultObservableAdapter : mAdapter
-  com.itbird.design.chaiin.upgrade.UpgradeRequestHandler o-- com.itbird.design.chaiin.upgrade.UpgradeRequestHandler : nextHandler
-  com.itbird.design.chaiin.upgrade.UpgradeResultObservableAdapter .up.|> com.itbird.design.chaiin.upgrade.UpgradeResultObservable
-  com.itbird.design.chaiin.upgrade.UpgradeResultObservableAdapter -up-|> android.database.Observable
+  com.itbird.design.chaiin.upgrade.v1.ASystemUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler
+  com.itbird.design.chaiin.upgrade.v1.BSystemUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler
+  com.itbird.design.chaiin.upgrade.v1.CSystemUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler
+  com.itbird.design.chaiin.upgrade.v1.InitUpgradeRequestHandler -up-|> com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler
+  com.itbird.design.chaiin.upgrade.v1.UpgradeManager o-- com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter : mAdapter
+  com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler o-- com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler : nextHandler
+  com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter .up.|> com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservable
+  com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter -up-|> android.database.Observable
   com.itbird.design.observer.demo.ObservableImpl .up.|> com.itbird.design.observer.demo.Observable
   com.itbird.design.observer.listadapter.BaseAdapter .up.|> android.widget.ListAdapter
   com.itbird.design.observer.listadapter.BaseAdapter .up.|> android.widget.SpinnerAdapter
@@ -442,6 +562,12 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.principle.imageloader.v3.ImageLoader o-- com.itbird.design.principle.imageloader.v3.ICache : mImageCache
   com.itbird.design.principle.imageloader.v3.ImageLoader o-- com.itbird.design.principle.imageloader.v3.ImageDownload : mImageDownload
   com.itbird.design.principle.imageloader.v3.MemoryCache .up.|> com.itbird.design.principle.imageloader.v3.ICache
+  com.itbird.design.principle.imageloader.v4.DiskCache .up.|> com.itbird.design.principle.imageloader.v4.ICache
+  com.itbird.design.principle.imageloader.v4.ImageLoader o-- com.itbird.design.principle.imageloader.v4.IDownloadRequest : mDefaultDownloadRequest
+  com.itbird.design.principle.imageloader.v4.ImageLoader o-- com.itbird.design.principle.imageloader.v4.IDownloadRequest : mDownloadRequest
+  com.itbird.design.principle.imageloader.v4.ImageLoader o-- com.itbird.design.principle.imageloader.v4.ICache : mImageCache
+  com.itbird.design.principle.imageloader.v4.MemoryCache .up.|> com.itbird.design.principle.imageloader.v4.ICache
+  com.itbird.design.principle.imageloader.v4.MyImageDownload .up.|> com.itbird.design.principle.imageloader.v4.IDownloadRequest
   com.itbird.design.principle.mvp.google.TaskGoogleActivity .up.|> com.itbird.design.principle.mvp.google.TaskDetailContract.View
   com.itbird.design.principle.mvp.google.TaskGoogleActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.principle.mvp.google.TaskGoogleActivity o-- com.itbird.design.principle.mvp.google.TaskDetailContract.Presenter : mPresenter
@@ -462,6 +588,15 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.principle.mvp.v2.TaskMyActivity -up-|> com.itbird.design.principle.mvp.v2.BaseActivity
   com.itbird.design.principle.mvp.v2.TaskMyPresenter .up.|> com.itbird.design.principle.mvp.v2.TaskMyContract.Presenter
   com.itbird.design.principle.mvp.v2.TaskMyPresenter -up-|> com.itbird.design.principle.mvp.v2.BasePresenter
+  com.itbird.design.principle.mvp.v3.BaseActivity -up-|> android.app.Activity
+  com.itbird.design.principle.mvp.v3.BaseActivity o-- T : mPresenter
+  com.itbird.design.principle.mvp.v3.BaseFragment -up-|> androidx.fragment.app.Fragment
+  com.itbird.design.principle.mvp.v3.BaseFragment o-- T : mPresenter
+  com.itbird.design.principle.mvp.v3.BasePresenter .up.|> com.itbird.design.principle.mvp.v3.IPresenter
+  com.itbird.design.principle.mvp.v3.TaskMyActivity .up.|> com.itbird.design.principle.mvp.v3.TaskMyContract.View
+  com.itbird.design.principle.mvp.v3.TaskMyActivity -up-|> com.itbird.design.principle.mvp.v3.BaseActivity
+  com.itbird.design.principle.mvp.v3.TaskMyPresenter .up.|> com.itbird.design.principle.mvp.v3.TaskMyContract.Presenter
+  com.itbird.design.principle.mvp.v3.TaskMyPresenter -up-|> com.itbird.design.principle.mvp.v3.BasePresenter
 
 
 right footer
