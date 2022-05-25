@@ -1,5 +1,6 @@
 package com.itbird.design;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.text.TextUtils;
@@ -19,6 +20,7 @@ import com.itbird.design.observer.demo.ObservableImpl;
 import com.itbird.design.observer.demo.Observer;
 import com.itbird.design.principle.imageloader.v3.DiskCache;
 import com.itbird.design.principle.imageloader.v3.ImageLoader;
+import com.itbird.design.singleton.activitymanager.ActivityManagerTestActivity;
 
 
 public class MainActivity extends AppCompatActivity implements Observer, UIHandler.IHandler {
@@ -41,6 +43,18 @@ public class MainActivity extends AppCompatActivity implements Observer, UIHandl
         testChainPatterm();
         //测试观察者模式
         testObserverPatterm();
+        //测试单例模式，activitymanager实现
+        testSingletomPatterm();
+    }
+
+    private void testSingletomPatterm() {
+        Button button1 = findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ActivityManagerTestActivity.class));
+            }
+        });
     }
 
 

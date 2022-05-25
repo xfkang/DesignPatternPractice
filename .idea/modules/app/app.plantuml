@@ -523,6 +523,14 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace singleton.uml {
+      class com.itbird.design.singleton.uml.Singletom {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace utils {
       class com.itbird.design.utils.CloseUtils {
       }
