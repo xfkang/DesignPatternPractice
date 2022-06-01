@@ -1,16 +1,20 @@
 package com.itbird.design;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.itbird.design.builder.dialog.CommonDialog;
+import com.itbird.design.builder.navigationbar.v1.NavigationBar;
 import com.itbird.design.chaiin.demo.Request;
 import com.itbird.design.chaiin.demo.RequestHandler1;
 import com.itbird.design.chaiin.demo.RequestHandler2;
@@ -37,14 +41,54 @@ public class MainActivity extends AppCompatActivity implements Observer, UIHandl
         initAction();
         mUIHandler = new UIHandler(this);
 
-        //测试六大基本原则
+        /**
+         * 测试六大基本原则
+         */
         testPrinciple();
-        //测试责任链模式
+        /**
+         * 测试责任链模式
+         */
         testChainPatterm();
-        //测试观察者模式
+        /**
+         * 测试观察者模式
+         */
         testObserverPatterm();
-        //测试单例模式，activitymanager实现
+        /**
+         * 测试单例模式，activitymanager实现
+         */
         testSingletomPatterm();
+        /**
+         * 测试建造者模式
+         */
+        testBuilderPatterm();
+    }
+
+    private void testBuilderPatterm() {
+        new NavigationBar.Builder(MainActivity.this, R.layout.navigation_layout, (ViewGroup) getWindow().getDecorView())
+                .setBackColor(com.google.android.material.R.color.design_default_color_on_secondary)
+                .setTextToButtonView(R.id.back_button, "返回")
+                .setTextToTextView(R.id.title_textview, "我是标题")
+                .setOnClickListenerToButtonView(R.id.back_button, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        showDialog();
+                    }
+                }).show();
+    }
+
+    private void showDialog() {
+        CommonDialog dialog = new CommonDialog.Builder(MainActivity.this)
+                .setTitle("我是弹窗")
+                .setMessage("快关闭我")
+                .setPositiveButton("关闭弹窗", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                }).create();
+        if (!dialog.isShowing()) {
+            dialog.show();
+        }
     }
 
     private void testSingletomPatterm() {

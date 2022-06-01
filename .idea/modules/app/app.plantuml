@@ -27,6 +27,62 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace builder.demo {
+      interface com.itbird.design.builder.demo.BuilderInterface {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder.demo {
+      class com.itbird.design.builder.demo.Product {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder.dialog {
+      class com.itbird.design.builder.dialog.CommonDialog {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder.dialog {
+      class com.itbird.design.builder.dialog.CommonProgressDialog {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder.dialog {
+      abstract class com.itbird.design.builder.dialog.CustomCountDownTimer {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder.dialog {
+      class com.itbird.design.builder.dialog.CustomCountDownTimerDialog {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder.navigationbar {
+      class com.itbird.design.builder.navigationbar.NavigationBar {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace chaiin.demo {
       abstract class com.itbird.design.chaiin.demo.Handler {
       }
@@ -523,8 +579,88 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
-    namespace singleton.uml {
-      class com.itbird.design.singleton.uml.Singletom {
+    namespace singleton.activitymanager {
+      class com.itbird.design.singleton.activitymanager.ActivityManager {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.activitymanager {
+      class com.itbird.design.singleton.activitymanager.ActivityManagerTestActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.activitymanager {
+      abstract class com.itbird.design.singleton.activitymanager.BaseActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.activitymanager {
+      class com.itbird.design.singleton.activitymanager.LoginActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.activitymanager {
+      class com.itbird.design.singleton.activitymanager.RegisterActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.implmethod.v1 {
+      class com.itbird.design.singleton.implmethod.v1.Singletom {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.implmethod.v2 {
+      class com.itbird.design.singleton.implmethod.v2.Singletom {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.implmethod.v3 {
+      class com.itbird.design.singleton.implmethod.v3.Singletom {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.implmethod.v4 {
+      class com.itbird.design.singleton.implmethod.v4.Singletom {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.implmethod.v5 {
+      class com.itbird.design.singleton.implmethod.v5.Singletom {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.implmethod.v6 {
+      enum Singletom {
       }
     }
   }
@@ -544,6 +680,11 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.MainActivity o-- com.itbird.design.UIHandler : mUIHandler
   com.itbird.design.UIHandler -up-|> android.os.Handler
+  com.itbird.design.builder.dialog.CommonDialog .up.|> android.content.DialogInterface
+  com.itbird.design.builder.dialog.CommonDialog -up-|> android.app.Dialog
+  com.itbird.design.builder.dialog.CommonDialog o-- com.itbird.design.builder.dialog.CommonDialog.ButtonHandler : handler
+  com.itbird.design.builder.dialog.CommonProgressDialog -up-|> android.app.Dialog
+  com.itbird.design.builder.dialog.CustomCountDownTimerDialog -up-|> android.app.Dialog
   com.itbird.design.chaiin.demo.Handler o-- com.itbird.design.chaiin.demo.Handler : next
   com.itbird.design.chaiin.demo.RequestHandler1 -up-|> com.itbird.design.chaiin.demo.Handler
   com.itbird.design.chaiin.demo.RequestHandler2 -up-|> com.itbird.design.chaiin.demo.Handler
@@ -605,6 +746,10 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.principle.mvp.v3.TaskMyActivity -up-|> com.itbird.design.principle.mvp.v3.BaseActivity
   com.itbird.design.principle.mvp.v3.TaskMyPresenter .up.|> com.itbird.design.principle.mvp.v3.TaskMyContract.Presenter
   com.itbird.design.principle.mvp.v3.TaskMyPresenter -up-|> com.itbird.design.principle.mvp.v3.BasePresenter
+  com.itbird.design.singleton.activitymanager.ActivityManagerTestActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
+  com.itbird.design.singleton.activitymanager.BaseActivity -up-|> android.app.Activity
+  com.itbird.design.singleton.activitymanager.LoginActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
+  com.itbird.design.singleton.activitymanager.RegisterActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
 
 
 right footer

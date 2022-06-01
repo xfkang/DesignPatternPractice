@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/drawable/progress_bar_background.xml" value="0.1" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/apa_no_button_dialog.xml" value="0.1" />
+        <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/common_message_one_button_dialog.xml" value="0.2717391304347826" />
+        <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/navigation_layout.xml" value="0.23641304347826086" />
       </map>
     </option>
   </component>

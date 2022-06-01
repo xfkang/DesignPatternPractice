@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DesignPatternPractice</string>
+    <string name="close_time">After %d seconds, the dialog box will close automatically.</string>
 </resources>

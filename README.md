@@ -37,4 +37,13 @@ IT行业，一直讲一句话，拼到最后都拼的是“内功”，而内功
 
 3.详细见博客地址：https://blog.csdn.net/baobei0921/article/details/124947364
 
+# 2022/06/01
+建造者模式是创建性设计模式的一种。该模式是为了将复杂对象的构建过程和组装过程相分离，对外不可见。
+
+1.Android源码设计模式探索【建造者模式】
+
+2.实践经验总结--自定义NavigationBar & 通用Dialog框架设计
+
+3.详细见博客地址：https://blog.csdn.net/baobei0921/article/details/124966396
+
 

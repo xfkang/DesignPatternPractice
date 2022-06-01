@@ -24,9 +24,12 @@ title __DESIGN's Class Diagram__\n
         # onDestroy()
         - initAction()
         - initView()
+        - showDialog()
+        - testBuilderPatterm()
         - testChainPatterm()
         - testObserverPatterm()
         - testPrinciple()
+        - testSingletomPatterm()
     }
   }
   

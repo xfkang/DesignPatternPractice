@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/dialog_background" />
+    <corners
+        android:topLeftRadius="12px"
+        android:topRightRadius="12px"
+        android:bottomRightRadius="12px"
+        android:bottomLeftRadius="12px" />
+    <stroke
+        android:width="2px"
+        android:color="@color/dialog_blue_color" />
+</shape>
