@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -20,6 +21,15 @@ import com.itbird.design.chaiin.demo.RequestHandler1;
 import com.itbird.design.chaiin.demo.RequestHandler2;
 import com.itbird.design.chaiin.demo.RequestHandler3;
 import com.itbird.design.chaiin.upgrade.v1.UpgradeManager;
+import com.itbird.design.factory.demo.v1.ConCreteIProductA;
+import com.itbird.design.factory.demo.v2.ConCreteIProductD;
+import com.itbird.design.factory.demo.v2.ConcreteFactory;
+import com.itbird.design.factory.imageLoader.v5.GlideImageLoader;
+import com.itbird.design.factory.imageLoader.v5.ImageLoaderFactory;
+import com.itbird.design.factory.imageLoader.v5.PicassoImageLoader;
+import com.itbird.design.factory.storage.MemoryStorageHandler;
+import com.itbird.design.factory.storage.PreferencesStorageHandler;
+import com.itbird.design.factory.storage.StorageFactroy;
 import com.itbird.design.observer.demo.ObservableImpl;
 import com.itbird.design.observer.demo.Observer;
 import com.itbird.design.principle.imageloader.v3.DiskCache;
@@ -61,6 +71,28 @@ public class MainActivity extends AppCompatActivity implements Observer, UIHandl
          * 测试建造者模式
          */
         testBuilderPatterm();
+        /**
+         * 测试工厂模式
+         */
+        testFactoryPatterm();
+    }
+
+    /**
+     * 测试工厂模式
+     */
+    private void testFactoryPatterm() {
+        ConCreteIProductD productD = ConcreteFactory.getInstance().createProduct(ConCreteIProductD.class);
+        productD.function();
+
+        StorageFactroy.getInstance().getStorageHandler(MemoryStorageHandler.class).getString("123");
+        StorageFactroy.getInstance().getStorageHandler(PreferencesStorageHandler.class).save("123", "3232");
+
+        /**
+         * 分别使用不同的图片加载框架
+         */
+        ImageLoaderFactory.getInstance().getImageLoader(PicassoImageLoader.class).setImageView(this, imageView, "https://img-blog.csdn.net/20160903083245762");
+        ImageLoaderFactory.getInstance().getImageLoader(com.itbird.design.principle.imageloader.v4.ImageLoader.class).setImageView(this, imageView, "https://img-blog.csdn.net/20160903083245762");
+        ImageLoaderFactory.getInstance().getImageLoader(GlideImageLoader.class).setImageView(this, imageView, "https://img-blog.csdn.net/20160903083245762");
     }
 
     private void testBuilderPatterm() {

@@ -7,6 +7,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.ImageView;
 
+import com.itbird.design.factory.imageLoader.v5.ILoadImage;
+
 import java.lang.ref.WeakReference;
 
 /**
@@ -14,7 +16,7 @@ import java.lang.ref.WeakReference;
  * imageloader优化，分离图片下载模块，实现下载模块可以自定义更换
  * Created by itbird on 2022/3/28.
  */
-public class ImageLoader {
+public class ImageLoader implements ILoadImage {
     private static final String TAG = ImageLoader.class.getSimpleName();
     private static volatile ImageLoader mInstance = null;
     /**
@@ -58,13 +60,15 @@ public class ImageLoader {
         return mInstance;
     }
 
+
     /**
      * 给view设置图片
-     *
-     * @param url
+     * @param context
      * @param imageView
+     * @param url
      */
-    public void setImageView(String url, ImageView imageView) {
+    @Override
+    public void setImageView(Context context, ImageView imageView, String url) {
         if (TextUtils.isEmpty(url) || imageView == null) {
             return;
         }

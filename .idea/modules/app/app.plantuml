@@ -75,8 +75,8 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
-    namespace builder.navigationbar {
-      class com.itbird.design.builder.navigationbar.NavigationBar {
+    namespace builder.navigationbar.v1 {
+      class com.itbird.design.builder.navigationbar.v1.NavigationBar {
       }
     }
   }
@@ -197,6 +197,166 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   namespace com.itbird.design {
     namespace chaiin.upgrade.v1 {
       class com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.demo.v1 {
+      class com.itbird.design.factory.demo.v1.ConCreteIProductA {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.demo.v1 {
+      class com.itbird.design.factory.demo.v1.ConCreteIProductB {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.demo.v1 {
+      class com.itbird.design.factory.demo.v1.ConCreteIProductC {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.demo.v1 {
+      class com.itbird.design.factory.demo.v1.ConcreteFactory {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.demo.v1 {
+      interface com.itbird.design.factory.demo.v1.IFactroy {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.demo.v1 {
+      interface com.itbird.design.factory.demo.v1.IProduct {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.demo.v2 {
+      class com.itbird.design.factory.demo.v2.ConCreteIProductD {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.demo.v2 {
+      class com.itbird.design.factory.demo.v2.ConcreteFactory {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.demo.v2 {
+      interface com.itbird.design.factory.demo.v2.IFactroy {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.imageLoader.v5 {
+      class com.itbird.design.factory.imageLoader.v5.GlideImageLoader {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.imageLoader.v5 {
+      interface com.itbird.design.factory.imageLoader.v5.IImageFactroy {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.imageLoader.v5 {
+      interface com.itbird.design.factory.imageLoader.v5.ILoadImage {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.imageLoader.v5 {
+      class com.itbird.design.factory.imageLoader.v5.ImageLoaderFactory {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.imageLoader.v5 {
+      class com.itbird.design.factory.imageLoader.v5.PicassoImageLoader {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.storage {
+      class com.itbird.design.factory.storage.DiskStorageHandler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.storage {
+      interface com.itbird.design.factory.storage.IStorage {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.storage {
+      interface com.itbird.design.factory.storage.IStorageFactroy {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.storage {
+      class com.itbird.design.factory.storage.MemoryStorageHandler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.storage {
+      class com.itbird.design.factory.storage.PreferencesStorageHandler {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace factory.storage {
+      class com.itbird.design.factory.storage.StorageFactroy {
       }
     }
   }
@@ -697,6 +857,19 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler o-- com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler : nextHandler
   com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter .up.|> com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservable
   com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter -up-|> android.database.Observable
+  com.itbird.design.factory.demo.v1.ConCreteIProductA .up.|> com.itbird.design.factory.demo.v1.IProduct
+  com.itbird.design.factory.demo.v1.ConCreteIProductB .up.|> com.itbird.design.factory.demo.v1.IProduct
+  com.itbird.design.factory.demo.v1.ConCreteIProductC .up.|> com.itbird.design.factory.demo.v1.IProduct
+  com.itbird.design.factory.demo.v1.ConcreteFactory .up.|> com.itbird.design.factory.demo.v1.IFactroy
+  com.itbird.design.factory.demo.v2.ConCreteIProductD .up.|> com.itbird.design.factory.demo.v1.IProduct
+  com.itbird.design.factory.demo.v2.ConcreteFactory .up.|> com.itbird.design.factory.demo.v2.IFactroy
+  com.itbird.design.factory.imageLoader.v5.GlideImageLoader .up.|> com.itbird.design.factory.imageLoader.v5.ILoadImage
+  com.itbird.design.factory.imageLoader.v5.ImageLoaderFactory .up.|> com.itbird.design.factory.imageLoader.v5.IImageFactroy
+  com.itbird.design.factory.imageLoader.v5.PicassoImageLoader .up.|> com.itbird.design.factory.imageLoader.v5.ILoadImage
+  com.itbird.design.factory.storage.DiskStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
+  com.itbird.design.factory.storage.MemoryStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
+  com.itbird.design.factory.storage.PreferencesStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
+  com.itbird.design.factory.storage.StorageFactroy .up.|> com.itbird.design.factory.storage.IStorageFactroy
   com.itbird.design.observer.demo.ObservableImpl .up.|> com.itbird.design.observer.demo.Observable
   com.itbird.design.observer.listadapter.BaseAdapter .up.|> android.widget.ListAdapter
   com.itbird.design.observer.listadapter.BaseAdapter .up.|> android.widget.SpinnerAdapter
@@ -712,6 +885,7 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.principle.imageloader.v3.ImageLoader o-- com.itbird.design.principle.imageloader.v3.ImageDownload : mImageDownload
   com.itbird.design.principle.imageloader.v3.MemoryCache .up.|> com.itbird.design.principle.imageloader.v3.ICache
   com.itbird.design.principle.imageloader.v4.DiskCache .up.|> com.itbird.design.principle.imageloader.v4.ICache
+  com.itbird.design.principle.imageloader.v4.ImageLoader .up.|> com.itbird.design.factory.imageLoader.v5.ILoadImage
   com.itbird.design.principle.imageloader.v4.ImageLoader o-- com.itbird.design.principle.imageloader.v4.IDownloadRequest : mDefaultDownloadRequest
   com.itbird.design.principle.imageloader.v4.ImageLoader o-- com.itbird.design.principle.imageloader.v4.IDownloadRequest : mDownloadRequest
   com.itbird.design.principle.imageloader.v4.ImageLoader o-- com.itbird.design.principle.imageloader.v4.ICache : mImageCache

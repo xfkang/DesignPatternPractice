@@ -27,6 +27,7 @@ title __DESIGN's Class Diagram__\n
         - showDialog()
         - testBuilderPatterm()
         - testChainPatterm()
+        - testFactoryPatterm()
         - testObserverPatterm()
         - testPrinciple()
         - testSingletomPatterm()

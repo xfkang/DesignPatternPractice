@@ -17,7 +17,7 @@ title __DEMO's Class Diagram__\n
   namespace com.itbird.design {
     namespace builder.demo {
       class com.itbird.design.builder.demo.Product {
-          + Product()
+          # Product()
       }
     }
   }

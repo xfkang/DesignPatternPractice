@@ -93,6 +93,7 @@ title __V4's Class Diagram__\n
   
 
   com.itbird.design.principle.imageloader.v4.DiskCache .up.|> com.itbird.design.principle.imageloader.v4.ICache
+  com.itbird.design.principle.imageloader.v4.ImageLoader .up.|> com.itbird.design.factory.imageLoader.v5.ILoadImage
   com.itbird.design.principle.imageloader.v4.ImageLoader o-- com.itbird.design.principle.imageloader.v4.IDownloadRequest : mDefaultDownloadRequest
   com.itbird.design.principle.imageloader.v4.ImageLoader o-- com.itbird.design.principle.imageloader.v4.IDownloadRequest : mDownloadRequest
   com.itbird.design.principle.imageloader.v4.ImageLoader o-- com.itbird.design.principle.imageloader.v4.ICache : mImageCache
