@@ -3,19 +3,21 @@
 title __V1's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v1 {
-      class com.itbird.design.principle.imageloader.v1.ImageLoader {
-          {static} - TAG : String
-          - mExecutor : ExecutorService
-          - mHandler : Handler
-          - mImageCache : LruCache<String, Bitmap>
-          {static} - mInstance : ImageLoader
-          {static} + getInstance()
-          + setImageView()
-          - ImageLoader()
-          - downloadImage()
-          - downloadUrlBitmap()
-          - initLruCache()
+    namespace principle {
+      namespace imageloader.v1 {
+        class com.itbird.design.principle.imageloader.v1.ImageLoader {
+            {static} - TAG : String
+            - mExecutor : ExecutorService
+            - mHandler : Handler
+            - mImageCache : LruCache<String, Bitmap>
+            {static} - mInstance : ImageLoader
+            {static} + getInstance()
+            + setImageView()
+            - ImageLoader()
+            - downloadImage()
+            - downloadUrlBitmap()
+            - initLruCache()
+        }
       }
     }
   }

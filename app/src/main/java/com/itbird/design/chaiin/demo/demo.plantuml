@@ -3,49 +3,59 @@
 title __DEMO's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      abstract class com.itbird.design.chaiin.demo.Handler {
-          + setNext()
-          ~ TAG()
-          {abstract} ~ handlerRequeset()
+    namespace chaiin {
+      namespace demo {
+        abstract class com.itbird.design.chaiin.demo.Handler {
+            + setNext()
+            ~ TAG()
+            {abstract} ~ handlerRequeset()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      class com.itbird.design.chaiin.demo.Request {
-          ~ url : String
-          + getUrl()
-          + setUrl()
+    namespace chaiin {
+      namespace demo {
+        class com.itbird.design.chaiin.demo.Request {
+            ~ url : String
+            + getUrl()
+            + setUrl()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      class com.itbird.design.chaiin.demo.RequestHandler1 {
-          + handlerRequeset()
+    namespace chaiin {
+      namespace demo {
+        class com.itbird.design.chaiin.demo.RequestHandler1 {
+            + handlerRequeset()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      class com.itbird.design.chaiin.demo.RequestHandler2 {
-          ~ handlerRequeset()
+    namespace chaiin {
+      namespace demo {
+        class com.itbird.design.chaiin.demo.RequestHandler2 {
+            ~ handlerRequeset()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      class com.itbird.design.chaiin.demo.RequestHandler3 {
-          ~ handlerRequeset()
+    namespace chaiin {
+      namespace demo {
+        class com.itbird.design.chaiin.demo.RequestHandler3 {
+            ~ handlerRequeset()
+        }
       }
     }
   }

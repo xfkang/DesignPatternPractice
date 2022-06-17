@@ -25,7 +25,14 @@
         </activity>
         <activity android:name=".singleton.activitymanager.RegisterActivity" />
         <activity android:name=".singleton.activitymanager.LoginActivity" />
-        <activity android:name=".singleton.activitymanager.ActivityManagerTestActivity" />
+        <activity android:name=".singleton.activitymanager.SingletonActivity" />
+        <activity android:name=".builder.BuilderActivity" />
+        <activity android:name=".chaiin.ChainActivity" />
+        <activity android:name=".decorator.DecoratorActivity" />
+        <activity android:name=".factory.FactoryActivity" />
+        <activity android:name=".observer.ObserverActivity" />
+        <activity android:name=".principle.PrincipleActivity" />
+        <activity android:name=".template.TemplateActivity" />
     </application>
 
 </manifest>

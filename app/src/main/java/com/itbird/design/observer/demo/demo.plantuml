@@ -3,35 +3,41 @@
 title __DEMO's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace observer.demo {
-      interface com.itbird.design.observer.demo.Observable {
-          {abstract} + attatchObservable()
-          {abstract} + detachObservable()
-          {abstract} + notifySetChanged()
+    namespace observer {
+      namespace demo {
+        interface com.itbird.design.observer.demo.Observable {
+            {abstract} + attatchObservable()
+            {abstract} + detachObservable()
+            {abstract} + notifySetChanged()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.demo {
-      class com.itbird.design.observer.demo.ObservableImpl {
-          ~ observers : List<Observer>
-          {static} - mInstance : ObservableImpl
-          + attatchObservable()
-          + detachObservable()
-          {static} + getmInstance()
-          + notifySetChanged()
-          - ObservableImpl()
+    namespace observer {
+      namespace demo {
+        class com.itbird.design.observer.demo.ObservableImpl {
+            ~ observers : List<Observer>
+            {static} - mInstance : ObservableImpl
+            + attatchObservable()
+            + detachObservable()
+            {static} + getmInstance()
+            + notifySetChanged()
+            - ObservableImpl()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.demo {
-      interface com.itbird.design.observer.demo.Observer {
-          {abstract} + updateUI()
+    namespace observer {
+      namespace demo {
+        interface com.itbird.design.observer.demo.Observer {
+            {abstract} + updateUI()
+        }
       }
     }
   }

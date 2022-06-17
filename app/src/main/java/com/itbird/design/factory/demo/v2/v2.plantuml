@@ -3,39 +3,47 @@
 title __V2's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace factory.demo.v2 {
-      class com.itbird.design.factory.demo.v2.ConCreteIProductD {
-          {static} - TAG : String
-          + function()
+    namespace factory {
+      namespace demo.v2 {
+        class com.itbird.design.factory.demo.v2.ConCreteIProductD {
+            {static} - TAG : String
+            + function()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v2 {
-      class com.itbird.design.factory.demo.v2.ConcreteFactory {
-          + createProduct()
-          {static} + getInstance()
-          - ConcreteFactory()
+    namespace factory {
+      namespace demo.v2 {
+        class com.itbird.design.factory.demo.v2.ConcreteFactory {
+            + createProduct()
+            {static} + getInstance()
+            - ConcreteFactory()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v2 {
-      class com.itbird.design.factory.demo.v2.ConcreteFactory.ConcreteFactoryHolder {
-          {static} ~ instance : ConcreteFactory
+    namespace factory {
+      namespace demo.v2 {
+        class com.itbird.design.factory.demo.v2.ConcreteFactory.ConcreteFactoryHolder {
+            {static} ~ instance : ConcreteFactory
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v2 {
-      interface com.itbird.design.factory.demo.v2.IFactroy {
-          {abstract} + createProduct()
+    namespace factory {
+      namespace demo.v2 {
+        interface com.itbird.design.factory.demo.v2.IFactroy {
+            {abstract} + createProduct()
+        }
       }
     }
   }

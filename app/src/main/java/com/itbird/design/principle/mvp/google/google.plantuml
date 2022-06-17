@@ -3,67 +3,81 @@
 title __GOOGLE's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      interface com.itbird.design.principle.mvp.google.BasePresenter {
+    namespace principle {
+      namespace mvp.google {
+        interface com.itbird.design.principle.mvp.google.BasePresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      interface com.itbird.design.principle.mvp.google.BaseView {
-          {abstract} + setPresenter()
+    namespace principle {
+      namespace mvp.google {
+        interface com.itbird.design.principle.mvp.google.BaseView {
+            {abstract} + setPresenter()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      interface com.itbird.design.principle.mvp.google.TaskDetailContract {
+    namespace principle {
+      namespace mvp.google {
+        interface com.itbird.design.principle.mvp.google.TaskDetailContract {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      interface com.itbird.design.principle.mvp.google.TaskDetailContract.Presenter {
-          {abstract} + loadDataFromModel()
+    namespace principle {
+      namespace mvp.google {
+        interface com.itbird.design.principle.mvp.google.TaskDetailContract.Presenter {
+            {abstract} + loadDataFromModel()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      interface com.itbird.design.principle.mvp.google.TaskDetailContract.View {
-          {abstract} + updateTextView()
+    namespace principle {
+      namespace mvp.google {
+        interface com.itbird.design.principle.mvp.google.TaskDetailContract.View {
+            {abstract} + updateTextView()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      class com.itbird.design.principle.mvp.google.TaskGoogleActivity {
-          {static} - TAG : String
-          - mTextView : TextView
-          + setPresenter()
-          + updateTextView()
-          # onCreate()
+    namespace principle {
+      namespace mvp.google {
+        class com.itbird.design.principle.mvp.google.TaskGoogleActivity {
+            {static} - TAG : String
+            - mTextView : TextView
+            + setPresenter()
+            + updateTextView()
+            # onCreate()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      class com.itbird.design.principle.mvp.google.TaskGooglePresenter {
-          {static} - TAG : String
-          + TaskGooglePresenter()
-          + loadDataFromModel()
+    namespace principle {
+      namespace mvp.google {
+        class com.itbird.design.principle.mvp.google.TaskGooglePresenter {
+            {static} - TAG : String
+            + TaskGooglePresenter()
+            + loadDataFromModel()
+        }
       }
     }
   }

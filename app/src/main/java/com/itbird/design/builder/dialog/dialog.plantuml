@@ -3,176 +3,192 @@
 title __DIALOG's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      class com.itbird.design.builder.dialog.CommonDialog {
-          {static} - DIALOG_STYLE_HIGH : int
-          {static} - DIALOG_STYLE_NORMAL : int
-          {static} - DIALOG_STYLE_SMALL : int
-          - dialogStyle : int
-          - mButtonHandler : OnClickListener
-          - messageTextView : TextView
-          - negativeButton : Button
-          - negativeMessage : Message
-          - positiveButton : Button
-          - positiveMessage : Message
-          - rootView : View
-          - titleTextView : TextView
-          + CommonDialog()
-          + CommonDialog()
-          + setMessage()
-          + setNegativeButton()
-          + setPositiveButton()
-          + setTitle()
-          # CommonDialog()
-          ~ CommonDialog()
-          - getInflateLayout()
-          - setWindowStyle()
-          - setupView()
+    namespace builder {
+      namespace dialog {
+        class com.itbird.design.builder.dialog.CommonDialog {
+            {static} - DIALOG_STYLE_HIGH : int
+            {static} - DIALOG_STYLE_NORMAL : int
+            {static} - DIALOG_STYLE_SMALL : int
+            - dialogStyle : int
+            - mButtonHandler : OnClickListener
+            - messageTextView : TextView
+            - negativeButton : Button
+            - negativeMessage : Message
+            - positiveButton : Button
+            - positiveMessage : Message
+            - rootView : View
+            - titleTextView : TextView
+            + CommonDialog()
+            + CommonDialog()
+            + setMessage()
+            + setNegativeButton()
+            + setPositiveButton()
+            + setTitle()
+            # CommonDialog()
+            ~ CommonDialog()
+            - getInflateLayout()
+            - setWindowStyle()
+            - setupView()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      class com.itbird.design.builder.dialog.CommonDialog.Builder {
-          - cancelable : boolean
-          - context : Context
-          - message : String
-          - negativeOnCLickListener : OnClickListener
-          - negativeText : String
-          - onCancelListener : OnCancelListener
-          - onDismissListener : OnDismissListener
-          - onKeyListener : OnKeyListener
-          - positiveOnClickListener : OnClickListener
-          - positiveText : String
-          - title : String
-          + Builder()
-          + create()
-          + setCancelable()
-          + setMessage()
-          + setMessage()
-          + setNegativeButton()
-          + setNegativeButton()
-          + setOnCancelListener()
-          + setOnDismissListener()
-          + setOnKeyListener()
-          + setPositiveButton()
-          + setPositiveButton()
-          + setTitle()
-          + setTitle()
-          + show()
-          - apply()
+    namespace builder {
+      namespace dialog {
+        class com.itbird.design.builder.dialog.CommonDialog.Builder {
+            - cancelable : boolean
+            - context : Context
+            - message : String
+            - negativeOnCLickListener : OnClickListener
+            - negativeText : String
+            - onCancelListener : OnCancelListener
+            - onDismissListener : OnDismissListener
+            - onKeyListener : OnKeyListener
+            - positiveOnClickListener : OnClickListener
+            - positiveText : String
+            - title : String
+            + Builder()
+            + create()
+            + setCancelable()
+            + setMessage()
+            + setMessage()
+            + setNegativeButton()
+            + setNegativeButton()
+            + setOnCancelListener()
+            + setOnDismissListener()
+            + setOnKeyListener()
+            + setPositiveButton()
+            + setPositiveButton()
+            + setTitle()
+            + setTitle()
+            + show()
+            - apply()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      class com.itbird.design.builder.dialog.CommonDialog.ButtonHandler {
-          {static} - MSG_DISMISS_DIALOG : int
-          - mDialog : WeakReference<DialogInterface>
-          + ButtonHandler()
-          + handleMessage()
+    namespace builder {
+      namespace dialog {
+        class com.itbird.design.builder.dialog.CommonDialog.ButtonHandler {
+            {static} - MSG_DISMISS_DIALOG : int
+            - mDialog : WeakReference<DialogInterface>
+            + ButtonHandler()
+            + handleMessage()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      class com.itbird.design.builder.dialog.CommonProgressDialog {
-          {static} + STYLE_HORIZONTAL : int
-          {static} + STYLE_SPINNER : int
-          - mHasStarted : boolean
-          - mMax : int
-          - mMessage : CharSequence
-          - mMessageView : TextView
-          - mProgress : ProgressBar
-          - mProgressPercent : TextView
-          - mProgressPercentFormat : NumberFormat
-          - mProgressStyle : int
-          - mProgressVal : int
-          - mTitle : CharSequence
-          - mTitleView : TextView
-          - mViewUpdateHandler : Handler
-          + CommonProgressDialog()
-          + CommonProgressDialog()
-          + getMax()
-          + getProgress()
-          + onStart()
-          + setMax()
-          + setMessage()
-          + setProgress()
-          + setProgressPercentFormat()
-          + setProgressStyle()
-          + setTitle()
-          {static} + show()
-          {static} + show()
-          {static} + show()
-          # onCreate()
-          # onStop()
-          - initFormats()
-          - onProgressChanged()
-          - setWindowStyle()
+    namespace builder {
+      namespace dialog {
+        class com.itbird.design.builder.dialog.CommonProgressDialog {
+            {static} + STYLE_HORIZONTAL : int
+            {static} + STYLE_SPINNER : int
+            - mHasStarted : boolean
+            - mMax : int
+            - mMessage : CharSequence
+            - mMessageView : TextView
+            - mProgress : ProgressBar
+            - mProgressPercent : TextView
+            - mProgressPercentFormat : NumberFormat
+            - mProgressStyle : int
+            - mProgressVal : int
+            - mTitle : CharSequence
+            - mTitleView : TextView
+            - mViewUpdateHandler : Handler
+            + CommonProgressDialog()
+            + CommonProgressDialog()
+            + getMax()
+            + getProgress()
+            + onStart()
+            + setMax()
+            + setMessage()
+            + setProgress()
+            + setProgressPercentFormat()
+            + setProgressStyle()
+            + setTitle()
+            {static} + show()
+            {static} + show()
+            {static} + show()
+            # onCreate()
+            # onStop()
+            - initFormats()
+            - onProgressChanged()
+            - setWindowStyle()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      abstract class com.itbird.design.builder.dialog.CustomCountDownTimer {
-          {static} - MSG : int
-          - isPause : boolean
-          - isStop : boolean
-          - mCountdownInterval : long
-          - mHandler : Handler
-          - mMillisInFuture : long
-          - mPauseTimeInFuture : long
-          - mStopTimeInFuture : long
-          + CustomCountDownTimer()
-          {abstract} + onFinish()
-          {abstract} + onTick()
-          + pause()
-          + restart()
-          + start()
-          + stop()
-          - start()
+    namespace builder {
+      namespace dialog {
+        abstract class com.itbird.design.builder.dialog.CustomCountDownTimer {
+            {static} - MSG : int
+            - isPause : boolean
+            - isStop : boolean
+            - mCountdownInterval : long
+            - mHandler : Handler
+            - mMillisInFuture : long
+            - mPauseTimeInFuture : long
+            - mStopTimeInFuture : long
+            + CustomCountDownTimer()
+            {abstract} + onFinish()
+            {abstract} + onTick()
+            + pause()
+            + restart()
+            + start()
+            + stop()
+            - start()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      class com.itbird.design.builder.dialog.CustomCountDownTimerDialog {
-          + CustomCountDownTimerDialog()
-          + CustomCountDownTimerDialog()
+    namespace builder {
+      namespace dialog {
+        class com.itbird.design.builder.dialog.CustomCountDownTimerDialog {
+            + CustomCountDownTimerDialog()
+            + CustomCountDownTimerDialog()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      class com.itbird.design.builder.dialog.CustomCountDownTimerDialog.Builder {
-          - context : Context
-          - title : String
-          + Builder()
-          + create()
-          + setCountDownTimerFinsh()
-          + setTitle()
+    namespace builder {
+      namespace dialog {
+        class com.itbird.design.builder.dialog.CustomCountDownTimerDialog.Builder {
+            - context : Context
+            - title : String
+            + Builder()
+            + create()
+            + setCountDownTimerFinsh()
+            + setTitle()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      interface com.itbird.design.builder.dialog.CustomCountDownTimerDialog.CountDownTimerFinsh {
-          {abstract} + onFinish()
+    namespace builder {
+      namespace dialog {
+        interface com.itbird.design.builder.dialog.CustomCountDownTimerDialog.CountDownTimerFinsh {
+            {abstract} + onFinish()
+        }
       }
     }
   }

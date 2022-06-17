@@ -3,36 +3,42 @@
 title __DEMO's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace builder.demo {
-      interface com.itbird.design.builder.demo.BuilderInterface {
-          {abstract} + buildApart()
-          {abstract} + buildBpart()
-          {abstract} + buildCpart()
-          {abstract} + create()
+    namespace builder {
+      namespace demo {
+        interface com.itbird.design.builder.demo.BuilderInterface {
+            {abstract} + buildApart()
+            {abstract} + buildBpart()
+            {abstract} + buildCpart()
+            {abstract} + create()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.demo {
-      class com.itbird.design.builder.demo.Product {
-          # Product()
+    namespace builder {
+      namespace demo {
+        class com.itbird.design.builder.demo.Product {
+            # Product()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.demo {
-      class com.itbird.design.builder.demo.Product.Builder {
-          ~ a : String
-          ~ b : String
-          ~ c : String
-          + buildApart()
-          + buildBpart()
-          + buildCpart()
-          + create()
+    namespace builder {
+      namespace demo {
+        class com.itbird.design.builder.demo.Product.Builder {
+            ~ a : String
+            ~ b : String
+            ~ c : String
+            + buildApart()
+            + buildBpart()
+            + buildCpart()
+            + create()
+        }
       }
     }
   }

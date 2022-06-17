@@ -3,54 +3,62 @@
 title __LISTADAPTER's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace observer.listadapter {
-      abstract class com.itbird.design.observer.listadapter.BaseAdapter {
-          - mAutofillOptions : CharSequence[]
-          - mDataSetObservable : DataSetObservable
-          + areAllItemsEnabled()
-          + getAutofillOptions()
-          + getDropDownView()
-          + getItemViewType()
-          + getViewTypeCount()
-          + hasStableIds()
-          + isEmpty()
-          + isEnabled()
-          + notifyDataSetChanged()
-          + notifyDataSetInvalidated()
-          + registerDataSetObserver()
-          + unregisterDataSetObserver()
+    namespace observer {
+      namespace listadapter {
+        abstract class com.itbird.design.observer.listadapter.BaseAdapter {
+            - mAutofillOptions : CharSequence[]
+            - mDataSetObservable : DataSetObservable
+            + areAllItemsEnabled()
+            + getAutofillOptions()
+            + getDropDownView()
+            + getItemViewType()
+            + getViewTypeCount()
+            + hasStableIds()
+            + isEmpty()
+            + isEnabled()
+            + notifyDataSetChanged()
+            + notifyDataSetInvalidated()
+            + registerDataSetObserver()
+            + unregisterDataSetObserver()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.listadapter {
-      class com.itbird.design.observer.listadapter.DataSetObservable {
-          + notifyChanged()
-          + notifyInvalidated()
+    namespace observer {
+      namespace listadapter {
+        class com.itbird.design.observer.listadapter.DataSetObservable {
+            + notifyChanged()
+            + notifyInvalidated()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.listadapter {
-      abstract class com.itbird.design.observer.listadapter.DataSetObserver {
-          + onChanged()
-          + onInvalidated()
+    namespace observer {
+      namespace listadapter {
+        abstract class com.itbird.design.observer.listadapter.DataSetObserver {
+            + onChanged()
+            + onInvalidated()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.listadapter {
-      abstract class com.itbird.design.observer.listadapter.Observable {
-          # mObservers : ArrayList<T>
-          + registerObserver()
-          + unregisterAll()
-          + unregisterObserver()
+    namespace observer {
+      namespace listadapter {
+        abstract class com.itbird.design.observer.listadapter.Observable {
+            # mObservers : ArrayList<T>
+            + registerObserver()
+            + unregisterAll()
+            + unregisterObserver()
+        }
       }
     }
   }

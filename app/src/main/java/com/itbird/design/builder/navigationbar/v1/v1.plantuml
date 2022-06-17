@@ -3,27 +3,31 @@
 title __V1's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace builder.navigationbar.v1 {
-      class com.itbird.design.builder.navigationbar.v1.NavigationBar {
-          # NavigationBar()
+    namespace builder {
+      namespace navigationbar.v1 {
+        class com.itbird.design.builder.navigationbar.v1.NavigationBar {
+            # NavigationBar()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.navigationbar.v1 {
-      class com.itbird.design.builder.navigationbar.v1.NavigationBar.Builder {
-          ~ layoutID : int
-          ~ mCurrentView : View
-          ~ parentView : ViewGroup
-          + Builder()
-          + findViewByID()
-          + setBackColor()
-          + setOnClickListenerToButtonView()
-          + setTextToButtonView()
-          + setTextToTextView()
-          + show()
+    namespace builder {
+      namespace navigationbar.v1 {
+        class com.itbird.design.builder.navigationbar.v1.NavigationBar.Builder {
+            ~ layoutID : int
+            ~ mCurrentView : View
+            ~ parentView : ViewGroup
+            + Builder()
+            + findViewByID()
+            + setBackColor()
+            + setOnClickListenerToButtonView()
+            + setTextToButtonView()
+            + setTextToTextView()
+            + show()
+        }
       }
     }
   }

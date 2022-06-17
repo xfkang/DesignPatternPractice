@@ -1,4 +1,4 @@
-package com.itbird.design;
+package com.itbird.design.utils;
 
 import android.os.Handler;
 import android.os.Looper;

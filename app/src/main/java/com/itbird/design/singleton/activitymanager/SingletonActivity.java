@@ -7,14 +7,17 @@ import android.widget.TextView;
 
 import com.itbird.design.R;
 
-
-public class ActivityManagerTestActivity extends BaseActivity {
+/**
+ * 测试单例模式
+ * Created by itbird on 2022/6/9
+ */
+public class SingletonActivity extends BaseActivity {
     Button button;
     TextView textView;
 
     @Override
     int getLayout() {
-        return R.layout.activity_main;
+        return R.layout.activity_common;
     }
 
     @Override
@@ -25,7 +28,7 @@ public class ActivityManagerTestActivity extends BaseActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ActivityManagerTestActivity.this, LoginActivity.class));
+                startActivity(new Intent(SingletonActivity.this, LoginActivity.class));
             }
         });
     }

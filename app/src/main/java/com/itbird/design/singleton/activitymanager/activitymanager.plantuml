@@ -29,18 +29,6 @@ title __ACTIVITYMANAGER's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace singleton.activitymanager {
-      class com.itbird.design.singleton.activitymanager.ActivityManagerTestActivity {
-          ~ button : Button
-          ~ textView : TextView
-          ~ getLayout()
-          ~ init()
-      }
-    }
-  }
-  
-
-  namespace com.itbird.design {
-    namespace singleton.activitymanager {
       abstract class com.itbird.design.singleton.activitymanager.BaseActivity {
           # onCreate()
           # onDestroy()
@@ -75,11 +63,23 @@ title __ACTIVITYMANAGER's Class Diagram__\n
   }
   
 
+  namespace com.itbird.design {
+    namespace singleton.activitymanager {
+      class com.itbird.design.singleton.activitymanager.SingletonActivity {
+          ~ button : Button
+          ~ textView : TextView
+          ~ getLayout()
+          ~ init()
+      }
+    }
+  }
+  
+
   com.itbird.design.singleton.activitymanager.ActivityManager +-down- com.itbird.design.singleton.activitymanager.ActivityManager.ActivityManagerHolder
-  com.itbird.design.singleton.activitymanager.ActivityManagerTestActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
   com.itbird.design.singleton.activitymanager.BaseActivity -up-|> android.app.Activity
   com.itbird.design.singleton.activitymanager.LoginActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
   com.itbird.design.singleton.activitymanager.RegisterActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
+  com.itbird.design.singleton.activitymanager.SingletonActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
 
 
 right footer

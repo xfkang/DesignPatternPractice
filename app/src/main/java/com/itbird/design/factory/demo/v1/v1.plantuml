@@ -3,57 +3,69 @@
 title __V1's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      class com.itbird.design.factory.demo.v1.ConCreteIProductA {
-          {static} - TAG : String
-          + function()
+    namespace factory {
+      namespace demo.v1 {
+        class com.itbird.design.factory.demo.v1.ConCreteIProductA {
+            {static} - TAG : String
+            + function()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      class com.itbird.design.factory.demo.v1.ConCreteIProductB {
-          {static} - TAG : String
-          + function()
+    namespace factory {
+      namespace demo.v1 {
+        class com.itbird.design.factory.demo.v1.ConCreteIProductB {
+            {static} - TAG : String
+            + function()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      class com.itbird.design.factory.demo.v1.ConCreteIProductC {
-          {static} - TAG : String
-          + function()
+    namespace factory {
+      namespace demo.v1 {
+        class com.itbird.design.factory.demo.v1.ConCreteIProductC {
+            {static} - TAG : String
+            + function()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      class com.itbird.design.factory.demo.v1.ConcreteFactory {
-          + createProduct()
+    namespace factory {
+      namespace demo.v1 {
+        class com.itbird.design.factory.demo.v1.ConcreteFactory {
+            + createProduct()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      interface com.itbird.design.factory.demo.v1.IFactroy {
-          {abstract} + createProduct()
+    namespace factory {
+      namespace demo.v1 {
+        interface com.itbird.design.factory.demo.v1.IFactroy {
+            {abstract} + createProduct()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      interface com.itbird.design.factory.demo.v1.IProduct {
-          {abstract} + function()
+    namespace factory {
+      namespace demo.v1 {
+        interface com.itbird.design.factory.demo.v1.IProduct {
+            {abstract} + function()
+        }
       }
     }
   }

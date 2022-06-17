@@ -3,123 +3,145 @@
 title __V1's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.ASystemUpgradeRequestHandler {
-          ~ handleUpgradeRequest()
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.ASystemUpgradeRequestHandler {
+            ~ handleUpgradeRequest()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.BSystemUpgradeRequestHandler {
-          ~ handleUpgradeRequest()
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.BSystemUpgradeRequestHandler {
+            ~ handleUpgradeRequest()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.CSystemUpgradeRequestHandler {
-          ~ handleUpgradeRequest()
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.CSystemUpgradeRequestHandler {
+            ~ handleUpgradeRequest()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.InitUpgradeRequestHandler {
-          ~ handleUpgradeRequest()
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.InitUpgradeRequestHandler {
+            ~ handleUpgradeRequest()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      interface com.itbird.design.chaiin.upgrade.v1.UpgradeErrorCode {
-          {static} + ZIP_PACKAGE_PARSE_EROOR : int
+    namespace chaiin {
+      namespace upgrade.v1 {
+        interface com.itbird.design.chaiin.upgrade.v1.UpgradeErrorCode {
+            {static} + ZIP_PACKAGE_PARSE_EROOR : int
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.UpgradeManager {
-          {static} + getInstance()
-          + startUpgrade()
-          ~ UpgradeManager()
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.UpgradeManager {
+            {static} + getInstance()
+            + startUpgrade()
+            ~ UpgradeManager()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.UpgradeManager.UpgradeManagerHolder {
-          {static} ~ mInstance : UpgradeManager
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.UpgradeManager.UpgradeManagerHolder {
+            {static} ~ mInstance : UpgradeManager
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.UpgradeRequest {
-          ~ bSystemPath : String
-          - aSystemPath : String
-          - mcuPath : String
-          - name : String
-          - path : String
-          + UpgradeRequest()
-          + getMcuPath()
-          + getName()
-          + getPath()
-          + getaSystemPath()
-          + getbSystemPath()
-          + setMcuPath()
-          + setName()
-          + setPath()
-          + setaSystemPath()
-          + setbSystemPath()
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.UpgradeRequest {
+            ~ bSystemPath : String
+            - aSystemPath : String
+            - mcuPath : String
+            - name : String
+            - path : String
+            + UpgradeRequest()
+            + getMcuPath()
+            + getName()
+            + getPath()
+            + getaSystemPath()
+            + getbSystemPath()
+            + setMcuPath()
+            + setName()
+            + setPath()
+            + setaSystemPath()
+            + setbSystemPath()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      abstract class com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler {
-          + TAG()
-          + handlerRequest()
-          + setNextHandler()
-          {abstract} ~ handleUpgradeRequest()
+    namespace chaiin {
+      namespace upgrade.v1 {
+        abstract class com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler {
+            + TAG()
+            + handlerRequest()
+            + setNextHandler()
+            {abstract} ~ handleUpgradeRequest()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      interface com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservable {
-          {abstract} + onError()
-          {abstract} + onUpgradeProgressCallback()
+    namespace chaiin {
+      namespace upgrade.v1 {
+        interface com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservable {
+            {abstract} + onError()
+            {abstract} + onUpgradeProgressCallback()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter {
-          + attatchUpgradeObserver()
-          + detachUpgradeObserver()
-          + onError()
-          + onUpgradeProgressCallback()
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter {
+            + attatchUpgradeObserver()
+            + detachUpgradeObserver()
+            + onError()
+            + onUpgradeProgressCallback()
+        }
       }
     }
   }

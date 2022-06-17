@@ -3,49 +3,57 @@
 title __V2's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v2 {
-      class com.itbird.design.principle.imageloader.v2.ImageCache {
-          - mImageCache : LruCache<String, Bitmap>
-          + getCache()
-          + initLruCache()
-          + putCache()
+    namespace principle {
+      namespace imageloader.v2 {
+        class com.itbird.design.principle.imageloader.v2.ImageCache {
+            - mImageCache : LruCache<String, Bitmap>
+            + getCache()
+            + initLruCache()
+            + putCache()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v2 {
-      class com.itbird.design.principle.imageloader.v2.ImageDownload {
-          - TAG : String
-          - mExecutor : ExecutorService
-          - mHandler : Handler
-          + ImageDownload()
-          + downloadImage()
-          - downloadUrlBitmap()
+    namespace principle {
+      namespace imageloader.v2 {
+        class com.itbird.design.principle.imageloader.v2.ImageDownload {
+            - TAG : String
+            - mExecutor : ExecutorService
+            - mHandler : Handler
+            + ImageDownload()
+            + downloadImage()
+            - downloadUrlBitmap()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v2 {
-      interface com.itbird.design.principle.imageloader.v2.ImageDownload.DownloadCallback {
-          {abstract} + downloadSuccess()
+    namespace principle {
+      namespace imageloader.v2 {
+        interface com.itbird.design.principle.imageloader.v2.ImageDownload.DownloadCallback {
+            {abstract} + downloadSuccess()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v2 {
-      class com.itbird.design.principle.imageloader.v2.ImageLoader {
-          {static} - TAG : String
-          {static} - mInstance : ImageLoader
-          + downloadSuccess()
-          {static} + getInstance()
-          + setImageView()
-          - ImageLoader()
+    namespace principle {
+      namespace imageloader.v2 {
+        class com.itbird.design.principle.imageloader.v2.ImageLoader {
+            {static} - TAG : String
+            {static} - mInstance : ImageLoader
+            + downloadSuccess()
+            {static} + getInstance()
+            + setImageView()
+            - ImageLoader()
+        }
       }
     }
   }

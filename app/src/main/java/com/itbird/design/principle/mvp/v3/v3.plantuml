@@ -3,96 +3,114 @@
 title __V3's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      abstract class com.itbird.design.principle.mvp.v3.BaseActivity {
-          # onCreate()
-          # onDestroy()
-          {abstract} ~ initPresenter()
+    namespace principle {
+      namespace mvp.v3 {
+        abstract class com.itbird.design.principle.mvp.v3.BaseActivity {
+            # onCreate()
+            # onDestroy()
+            {abstract} ~ initPresenter()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      abstract class com.itbird.design.principle.mvp.v3.BaseFragment {
-          + onDestroyView()
-          + onViewCreated()
-          {abstract} ~ initPresenter()
+    namespace principle {
+      namespace mvp.v3 {
+        abstract class com.itbird.design.principle.mvp.v3.BaseFragment {
+            + onDestroyView()
+            + onViewCreated()
+            {abstract} ~ initPresenter()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      abstract class com.itbird.design.principle.mvp.v3.BasePresenter {
-          ~ mIView : WeakReference<V>
-          + getView()
-          + isViewAttached()
-          + onAttach()
-          + onDetach()
+    namespace principle {
+      namespace mvp.v3 {
+        abstract class com.itbird.design.principle.mvp.v3.BasePresenter {
+            ~ mIView : WeakReference<V>
+            + getView()
+            + isViewAttached()
+            + onAttach()
+            + onDetach()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      interface com.itbird.design.principle.mvp.v3.IPresenter {
-          {abstract} + getView()
-          {abstract} + isViewAttached()
-          {abstract} + onAttach()
-          {abstract} + onDetach()
+    namespace principle {
+      namespace mvp.v3 {
+        interface com.itbird.design.principle.mvp.v3.IPresenter {
+            {abstract} + getView()
+            {abstract} + isViewAttached()
+            {abstract} + onAttach()
+            {abstract} + onDetach()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      class com.itbird.design.principle.mvp.v3.TaskMyActivity {
-          ~ mTextView : TextView
-          {static} - TAG : String
-          + updateTextView()
-          # onCreate()
-          ~ initPresenter()
+    namespace principle {
+      namespace mvp.v3 {
+        class com.itbird.design.principle.mvp.v3.TaskMyActivity {
+            ~ mTextView : TextView
+            {static} - TAG : String
+            + updateTextView()
+            # onCreate()
+            ~ initPresenter()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      interface com.itbird.design.principle.mvp.v3.TaskMyContract {
+    namespace principle {
+      namespace mvp.v3 {
+        interface com.itbird.design.principle.mvp.v3.TaskMyContract {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      interface com.itbird.design.principle.mvp.v3.TaskMyContract.Presenter {
-          {abstract} + loadDataFromModel()
+    namespace principle {
+      namespace mvp.v3 {
+        interface com.itbird.design.principle.mvp.v3.TaskMyContract.Presenter {
+            {abstract} + loadDataFromModel()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      interface com.itbird.design.principle.mvp.v3.TaskMyContract.View {
-          {abstract} + updateTextView()
+    namespace principle {
+      namespace mvp.v3 {
+        interface com.itbird.design.principle.mvp.v3.TaskMyContract.View {
+            {abstract} + updateTextView()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      class com.itbird.design.principle.mvp.v3.TaskMyPresenter {
-          {static} - TAG : String
-          + loadDataFromModel()
+    namespace principle {
+      namespace mvp.v3 {
+        class com.itbird.design.principle.mvp.v3.TaskMyPresenter {
+            {static} - TAG : String
+            + loadDataFromModel()
+        }
       }
     }
   }

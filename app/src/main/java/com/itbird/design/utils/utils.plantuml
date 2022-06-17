@@ -11,6 +11,28 @@ title __UTILS's Class Diagram__\n
   }
   
 
+  namespace com.itbird.design {
+    namespace utils {
+      class com.itbird.design.utils.UIHandler {
+          ~ mCallback : WeakReference<T>
+          + UIHandler()
+          + handleMessage()
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace utils {
+      interface com.itbird.design.utils.UIHandler.IHandler {
+          {abstract} + handleMessage()
+      }
+    }
+  }
+  
+
+  com.itbird.design.utils.UIHandler -up-|> android.os.Handler
+  com.itbird.design.utils.UIHandler +-down- com.itbird.design.utils.UIHandler.IHandler
 
 
 right footer

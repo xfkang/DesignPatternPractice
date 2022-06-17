@@ -3,93 +3,111 @@
 title __V1's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      abstract class com.itbird.design.principle.mvp.v1.BaseActivity {
-          # onCreate()
-          # onDestroy()
-          {abstract} ~ createPresenter()
+    namespace principle {
+      namespace mvp.v1 {
+        abstract class com.itbird.design.principle.mvp.v1.BaseActivity {
+            # onCreate()
+            # onDestroy()
+            {abstract} ~ createPresenter()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      class com.itbird.design.principle.mvp.v1.BasePresenter {
-          ~ mIView : WeakReference<V>
-          + getView()
-          + isViewAttached()
-          + onAttach()
-          + onDetach()
+    namespace principle {
+      namespace mvp.v1 {
+        class com.itbird.design.principle.mvp.v1.BasePresenter {
+            ~ mIView : WeakReference<V>
+            + getView()
+            + isViewAttached()
+            + onAttach()
+            + onDetach()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      interface com.itbird.design.principle.mvp.v1.IPresenter {
-          {abstract} + getView()
-          {abstract} + isViewAttached()
-          {abstract} + onAttach()
-          {abstract} + onDetach()
+    namespace principle {
+      namespace mvp.v1 {
+        interface com.itbird.design.principle.mvp.v1.IPresenter {
+            {abstract} + getView()
+            {abstract} + isViewAttached()
+            {abstract} + onAttach()
+            {abstract} + onDetach()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      interface com.itbird.design.principle.mvp.v1.IView {
+    namespace principle {
+      namespace mvp.v1 {
+        interface com.itbird.design.principle.mvp.v1.IView {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      class com.itbird.design.principle.mvp.v1.TaskMyActivity {
-          ~ mTextView : TextView
-          {static} - TAG : String
-          + updateTextView()
-          # onCreate()
-          ~ createPresenter()
+    namespace principle {
+      namespace mvp.v1 {
+        class com.itbird.design.principle.mvp.v1.TaskMyActivity {
+            ~ mTextView : TextView
+            {static} - TAG : String
+            + updateTextView()
+            # onCreate()
+            ~ createPresenter()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      interface com.itbird.design.principle.mvp.v1.TaskMyContract {
+    namespace principle {
+      namespace mvp.v1 {
+        interface com.itbird.design.principle.mvp.v1.TaskMyContract {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      interface com.itbird.design.principle.mvp.v1.TaskMyContract.Presenter {
-          {abstract} + loadDataFromModel()
+    namespace principle {
+      namespace mvp.v1 {
+        interface com.itbird.design.principle.mvp.v1.TaskMyContract.Presenter {
+            {abstract} + loadDataFromModel()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      interface com.itbird.design.principle.mvp.v1.TaskMyContract.View {
-          {abstract} + updateTextView()
+    namespace principle {
+      namespace mvp.v1 {
+        interface com.itbird.design.principle.mvp.v1.TaskMyContract.View {
+            {abstract} + updateTextView()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      class com.itbird.design.principle.mvp.v1.TaskMyPresenter {
-          {static} - TAG : String
-          + loadDataFromModel()
+    namespace principle {
+      namespace mvp.v1 {
+        class com.itbird.design.principle.mvp.v1.TaskMyPresenter {
+            {static} - TAG : String
+            + loadDataFromModel()
+        }
       }
     }
   }

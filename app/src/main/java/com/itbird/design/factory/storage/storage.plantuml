@@ -3,110 +3,124 @@
 title __STORAGE's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      class com.itbird.design.factory.storage.DiskStorageHandler {
-          + getBoolean()
-          + getDouble()
-          + getInt()
-          + getLong()
-          + getObject()
-          + getString()
-          + save()
-          + save()
-          + save()
-          + save()
-          + save()
-          + save()
+    namespace factory {
+      namespace storage {
+        class com.itbird.design.factory.storage.DiskStorageHandler {
+            + getBoolean()
+            + getDouble()
+            + getInt()
+            + getLong()
+            + getObject()
+            + getString()
+            + save()
+            + save()
+            + save()
+            + save()
+            + save()
+            + save()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      interface com.itbird.design.factory.storage.IStorage {
-          {abstract} + getBoolean()
-          {abstract} + getDouble()
-          {abstract} + getInt()
-          {abstract} + getLong()
-          {abstract} + getObject()
-          {abstract} + getString()
-          {abstract} + save()
-          {abstract} + save()
-          {abstract} + save()
-          {abstract} + save()
-          {abstract} + save()
-          {abstract} + save()
+    namespace factory {
+      namespace storage {
+        interface com.itbird.design.factory.storage.IStorage {
+            {abstract} + getBoolean()
+            {abstract} + getDouble()
+            {abstract} + getInt()
+            {abstract} + getLong()
+            {abstract} + getObject()
+            {abstract} + getString()
+            {abstract} + save()
+            {abstract} + save()
+            {abstract} + save()
+            {abstract} + save()
+            {abstract} + save()
+            {abstract} + save()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      interface com.itbird.design.factory.storage.IStorageFactroy {
-          {abstract} + getStorageHandler()
+    namespace factory {
+      namespace storage {
+        interface com.itbird.design.factory.storage.IStorageFactroy {
+            {abstract} + getStorageHandler()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      class com.itbird.design.factory.storage.MemoryStorageHandler {
-          {static} - mCache : LruCache<String, Object>
-          + getBoolean()
-          + getDouble()
-          + getInt()
-          + getLong()
-          + getObject()
-          + getString()
-          + save()
-          + save()
-          + save()
-          + save()
-          + save()
-          + save()
+    namespace factory {
+      namespace storage {
+        class com.itbird.design.factory.storage.MemoryStorageHandler {
+            {static} - mCache : LruCache<String, Object>
+            + getBoolean()
+            + getDouble()
+            + getInt()
+            + getLong()
+            + getObject()
+            + getString()
+            + save()
+            + save()
+            + save()
+            + save()
+            + save()
+            + save()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      class com.itbird.design.factory.storage.PreferencesStorageHandler {
-          + getBoolean()
-          + getDouble()
-          + getInt()
-          + getLong()
-          + getObject()
-          + getString()
-          + save()
-          + save()
-          + save()
-          + save()
-          + save()
-          + save()
+    namespace factory {
+      namespace storage {
+        class com.itbird.design.factory.storage.PreferencesStorageHandler {
+            + getBoolean()
+            + getDouble()
+            + getInt()
+            + getLong()
+            + getObject()
+            + getString()
+            + save()
+            + save()
+            + save()
+            + save()
+            + save()
+            + save()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      class com.itbird.design.factory.storage.StorageFactroy {
-          {static} + getInstance()
-          + getStorageHandler()
-          - StorageFactroy()
+    namespace factory {
+      namespace storage {
+        class com.itbird.design.factory.storage.StorageFactroy {
+            {static} + getInstance()
+            + getStorageHandler()
+            - StorageFactroy()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      class com.itbird.design.factory.storage.StorageFactroy.StorageFactroyHolder {
-          {static} ~ instance : StorageFactroy
+    namespace factory {
+      namespace storage {
+        class com.itbird.design.factory.storage.StorageFactroy.StorageFactroyHolder {
+            {static} ~ instance : StorageFactroy
+        }
       }
     }
   }

@@ -21,718 +21,1008 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
-    class com.itbird.design.UIHandler {
+    namespace builder {
+      class com.itbird.design.builder.BuilderActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder {
+      namespace demo {
+        interface com.itbird.design.builder.demo.BuilderInterface {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder {
+      namespace demo {
+        class com.itbird.design.builder.demo.Product {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder {
+      namespace dialog {
+        class com.itbird.design.builder.dialog.CommonDialog {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder {
+      namespace dialog {
+        class com.itbird.design.builder.dialog.CommonProgressDialog {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder {
+      namespace dialog {
+        abstract class com.itbird.design.builder.dialog.CustomCountDownTimer {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder {
+      namespace dialog {
+        class com.itbird.design.builder.dialog.CustomCountDownTimerDialog {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace builder {
+      namespace navigationbar.v1 {
+        class com.itbird.design.builder.navigationbar.v1.NavigationBar {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin {
+      class com.itbird.design.chaiin.ChainActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin {
+      namespace demo {
+        abstract class com.itbird.design.chaiin.demo.Handler {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin {
+      namespace demo {
+        class com.itbird.design.chaiin.demo.Request {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin {
+      namespace demo {
+        class com.itbird.design.chaiin.demo.RequestHandler1 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace chaiin {
+      namespace demo {
+        class com.itbird.design.chaiin.demo.RequestHandler2 {
+        }
+      }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.demo {
-      interface com.itbird.design.builder.demo.BuilderInterface {
+    namespace chaiin {
+      namespace demo {
+        class com.itbird.design.chaiin.demo.RequestHandler3 {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.demo {
-      class com.itbird.design.builder.demo.Product {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.ASystemUpgradeRequestHandler {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      class com.itbird.design.builder.dialog.CommonDialog {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.BSystemUpgradeRequestHandler {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      class com.itbird.design.builder.dialog.CommonProgressDialog {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.CSystemUpgradeRequestHandler {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      abstract class com.itbird.design.builder.dialog.CustomCountDownTimer {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.InitUpgradeRequestHandler {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.dialog {
-      class com.itbird.design.builder.dialog.CustomCountDownTimerDialog {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        interface com.itbird.design.chaiin.upgrade.v1.UpgradeErrorCode {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace builder.navigationbar.v1 {
-      class com.itbird.design.builder.navigationbar.v1.NavigationBar {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.UpgradeManager {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      abstract class com.itbird.design.chaiin.demo.Handler {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.UpgradeRequest {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      class com.itbird.design.chaiin.demo.Request {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        abstract class com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      class com.itbird.design.chaiin.demo.RequestHandler1 {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        interface com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservable {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      class com.itbird.design.chaiin.demo.RequestHandler2 {
+    namespace chaiin {
+      namespace upgrade.v1 {
+        class com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.demo {
-      class com.itbird.design.chaiin.demo.RequestHandler3 {
+    namespace decorator {
+      class com.itbird.design.decorator.DecoratorActivity {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.ASystemUpgradeRequestHandler {
+    namespace decorator {
+      namespace demo {
+        abstract class com.itbird.design.decorator.demo.Component {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.BSystemUpgradeRequestHandler {
+    namespace decorator {
+      namespace demo {
+        class com.itbird.design.decorator.demo.ComponentImplA {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.CSystemUpgradeRequestHandler {
+    namespace decorator {
+      namespace demo {
+        class com.itbird.design.decorator.demo.ComponentImplB {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.InitUpgradeRequestHandler {
+    namespace decorator {
+      namespace demo {
+        class com.itbird.design.decorator.demo.ConCreateComponent {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      interface com.itbird.design.chaiin.upgrade.v1.UpgradeErrorCode {
+    namespace decorator {
+      namespace demo {
+        abstract class com.itbird.design.decorator.demo.DecoratorComponent {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.UpgradeManager {
+    namespace decorator {
+      namespace recycleview {
+        class com.itbird.design.decorator.recycleview.WrapperRecycleView {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.UpgradeRequest {
+    namespace decorator {
+      namespace recycleview {
+        class com.itbird.design.decorator.recycleview.WrapperRecyclerAdapter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      abstract class com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler {
+    namespace factory {
+      class com.itbird.design.factory.FactoryActivity {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      interface com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservable {
+    namespace factory {
+      namespace demo.v1 {
+        class com.itbird.design.factory.demo.v1.ConCreteIProductA {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace chaiin.upgrade.v1 {
-      class com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter {
+    namespace factory {
+      namespace demo.v1 {
+        class com.itbird.design.factory.demo.v1.ConCreteIProductB {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      class com.itbird.design.factory.demo.v1.ConCreteIProductA {
+    namespace factory {
+      namespace demo.v1 {
+        class com.itbird.design.factory.demo.v1.ConCreteIProductC {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      class com.itbird.design.factory.demo.v1.ConCreteIProductB {
+    namespace factory {
+      namespace demo.v1 {
+        class com.itbird.design.factory.demo.v1.ConcreteFactory {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      class com.itbird.design.factory.demo.v1.ConCreteIProductC {
+    namespace factory {
+      namespace demo.v1 {
+        interface com.itbird.design.factory.demo.v1.IFactroy {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      class com.itbird.design.factory.demo.v1.ConcreteFactory {
+    namespace factory {
+      namespace demo.v1 {
+        interface com.itbird.design.factory.demo.v1.IProduct {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      interface com.itbird.design.factory.demo.v1.IFactroy {
+    namespace factory {
+      namespace demo.v2 {
+        class com.itbird.design.factory.demo.v2.ConCreteIProductD {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v1 {
-      interface com.itbird.design.factory.demo.v1.IProduct {
+    namespace factory {
+      namespace demo.v2 {
+        class com.itbird.design.factory.demo.v2.ConcreteFactory {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v2 {
-      class com.itbird.design.factory.demo.v2.ConCreteIProductD {
+    namespace factory {
+      namespace demo.v2 {
+        interface com.itbird.design.factory.demo.v2.IFactroy {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v2 {
-      class com.itbird.design.factory.demo.v2.ConcreteFactory {
+    namespace factory {
+      namespace imageLoader.v5 {
+        class com.itbird.design.factory.imageLoader.v5.GlideImageLoader {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.demo.v2 {
-      interface com.itbird.design.factory.demo.v2.IFactroy {
+    namespace factory {
+      namespace imageLoader.v5 {
+        interface com.itbird.design.factory.imageLoader.v5.IImageFactroy {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.imageLoader.v5 {
-      class com.itbird.design.factory.imageLoader.v5.GlideImageLoader {
+    namespace factory {
+      namespace imageLoader.v5 {
+        interface com.itbird.design.factory.imageLoader.v5.ILoadImage {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.imageLoader.v5 {
-      interface com.itbird.design.factory.imageLoader.v5.IImageFactroy {
+    namespace factory {
+      namespace imageLoader.v5 {
+        class com.itbird.design.factory.imageLoader.v5.ImageLoaderFactory {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.imageLoader.v5 {
-      interface com.itbird.design.factory.imageLoader.v5.ILoadImage {
+    namespace factory {
+      namespace imageLoader.v5 {
+        class com.itbird.design.factory.imageLoader.v5.PicassoImageLoader {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.imageLoader.v5 {
-      class com.itbird.design.factory.imageLoader.v5.ImageLoaderFactory {
+    namespace factory {
+      namespace storage {
+        class com.itbird.design.factory.storage.DiskStorageHandler {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.imageLoader.v5 {
-      class com.itbird.design.factory.imageLoader.v5.PicassoImageLoader {
+    namespace factory {
+      namespace storage {
+        interface com.itbird.design.factory.storage.IStorage {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      class com.itbird.design.factory.storage.DiskStorageHandler {
+    namespace factory {
+      namespace storage {
+        interface com.itbird.design.factory.storage.IStorageFactroy {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      interface com.itbird.design.factory.storage.IStorage {
+    namespace factory {
+      namespace storage {
+        class com.itbird.design.factory.storage.MemoryStorageHandler {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      interface com.itbird.design.factory.storage.IStorageFactroy {
+    namespace factory {
+      namespace storage {
+        class com.itbird.design.factory.storage.PreferencesStorageHandler {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      class com.itbird.design.factory.storage.MemoryStorageHandler {
+    namespace factory {
+      namespace storage {
+        class com.itbird.design.factory.storage.StorageFactroy {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      class com.itbird.design.factory.storage.PreferencesStorageHandler {
+    namespace observer {
+      class com.itbird.design.observer.ObserverActivity {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace factory.storage {
-      class com.itbird.design.factory.storage.StorageFactroy {
+    namespace observer {
+      namespace demo {
+        interface com.itbird.design.observer.demo.Observable {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.demo {
-      interface com.itbird.design.observer.demo.Observable {
+    namespace observer {
+      namespace demo {
+        class com.itbird.design.observer.demo.ObservableImpl {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.demo {
-      class com.itbird.design.observer.demo.ObservableImpl {
+    namespace observer {
+      namespace demo {
+        interface com.itbird.design.observer.demo.Observer {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.demo {
-      interface com.itbird.design.observer.demo.Observer {
+    namespace observer {
+      namespace listadapter {
+        abstract class com.itbird.design.observer.listadapter.BaseAdapter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.listadapter {
-      abstract class com.itbird.design.observer.listadapter.BaseAdapter {
+    namespace observer {
+      namespace listadapter {
+        class com.itbird.design.observer.listadapter.DataSetObservable {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.listadapter {
-      class com.itbird.design.observer.listadapter.DataSetObservable {
+    namespace observer {
+      namespace listadapter {
+        abstract class com.itbird.design.observer.listadapter.DataSetObserver {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.listadapter {
-      abstract class com.itbird.design.observer.listadapter.DataSetObserver {
+    namespace observer {
+      namespace listadapter {
+        abstract class com.itbird.design.observer.listadapter.Observable {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace observer.listadapter {
-      abstract class com.itbird.design.observer.listadapter.Observable {
+    namespace principle {
+      class com.itbird.design.principle.PrincipleActivity {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v1 {
-      class com.itbird.design.principle.imageloader.v1.ImageLoader {
+    namespace principle {
+      namespace imageloader.v1 {
+        class com.itbird.design.principle.imageloader.v1.ImageLoader {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v2 {
-      class com.itbird.design.principle.imageloader.v2.ImageCache {
+    namespace principle {
+      namespace imageloader.v2 {
+        class com.itbird.design.principle.imageloader.v2.ImageCache {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v2 {
-      class com.itbird.design.principle.imageloader.v2.ImageDownload {
+    namespace principle {
+      namespace imageloader.v2 {
+        class com.itbird.design.principle.imageloader.v2.ImageDownload {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v2 {
-      class com.itbird.design.principle.imageloader.v2.ImageLoader {
+    namespace principle {
+      namespace imageloader.v2 {
+        class com.itbird.design.principle.imageloader.v2.ImageLoader {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v3 {
-      class com.itbird.design.principle.imageloader.v3.DiskCache {
+    namespace principle {
+      namespace imageloader.v3 {
+        class com.itbird.design.principle.imageloader.v3.DiskCache {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v3 {
-      interface com.itbird.design.principle.imageloader.v3.ICache {
+    namespace principle {
+      namespace imageloader.v3 {
+        interface com.itbird.design.principle.imageloader.v3.ICache {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v3 {
-      class com.itbird.design.principle.imageloader.v3.ImageDownload {
+    namespace principle {
+      namespace imageloader.v3 {
+        class com.itbird.design.principle.imageloader.v3.ImageDownload {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v3 {
-      class com.itbird.design.principle.imageloader.v3.ImageLoader {
+    namespace principle {
+      namespace imageloader.v3 {
+        class com.itbird.design.principle.imageloader.v3.ImageLoader {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v3 {
-      class com.itbird.design.principle.imageloader.v3.MemoryCache {
+    namespace principle {
+      namespace imageloader.v3 {
+        class com.itbird.design.principle.imageloader.v3.MemoryCache {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v4 {
-      class com.itbird.design.principle.imageloader.v4.DiskCache {
+    namespace principle {
+      namespace imageloader.v4 {
+        class com.itbird.design.principle.imageloader.v4.DiskCache {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v4 {
-      interface com.itbird.design.principle.imageloader.v4.DownloadCallback {
+    namespace principle {
+      namespace imageloader.v4 {
+        interface com.itbird.design.principle.imageloader.v4.DownloadCallback {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v4 {
-      interface com.itbird.design.principle.imageloader.v4.ICache {
+    namespace principle {
+      namespace imageloader.v4 {
+        interface com.itbird.design.principle.imageloader.v4.ICache {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v4 {
-      interface com.itbird.design.principle.imageloader.v4.IDownloadRequest {
+    namespace principle {
+      namespace imageloader.v4 {
+        interface com.itbird.design.principle.imageloader.v4.IDownloadRequest {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v4 {
-      class com.itbird.design.principle.imageloader.v4.ImageLoader {
+    namespace principle {
+      namespace imageloader.v4 {
+        class com.itbird.design.principle.imageloader.v4.ImageLoader {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v4 {
-      class com.itbird.design.principle.imageloader.v4.MemoryCache {
+    namespace principle {
+      namespace imageloader.v4 {
+        class com.itbird.design.principle.imageloader.v4.MemoryCache {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.imageloader.v4 {
-      class com.itbird.design.principle.imageloader.v4.MyImageDownload {
+    namespace principle {
+      namespace imageloader.v4 {
+        class com.itbird.design.principle.imageloader.v4.MyImageDownload {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      interface com.itbird.design.principle.mvp.google.BasePresenter {
+    namespace principle {
+      namespace mvp.google {
+        interface com.itbird.design.principle.mvp.google.BasePresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      interface com.itbird.design.principle.mvp.google.BaseView {
+    namespace principle {
+      namespace mvp.google {
+        interface com.itbird.design.principle.mvp.google.BaseView {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      interface com.itbird.design.principle.mvp.google.TaskDetailContract {
+    namespace principle {
+      namespace mvp.google {
+        interface com.itbird.design.principle.mvp.google.TaskDetailContract {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      class com.itbird.design.principle.mvp.google.TaskGoogleActivity {
+    namespace principle {
+      namespace mvp.google {
+        class com.itbird.design.principle.mvp.google.TaskGoogleActivity {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.google {
-      class com.itbird.design.principle.mvp.google.TaskGooglePresenter {
+    namespace principle {
+      namespace mvp.google {
+        class com.itbird.design.principle.mvp.google.TaskGooglePresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      abstract class com.itbird.design.principle.mvp.v1.BaseActivity {
+    namespace principle {
+      namespace mvp.v1 {
+        abstract class com.itbird.design.principle.mvp.v1.BaseActivity {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      class com.itbird.design.principle.mvp.v1.BasePresenter {
+    namespace principle {
+      namespace mvp.v1 {
+        class com.itbird.design.principle.mvp.v1.BasePresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      interface com.itbird.design.principle.mvp.v1.IPresenter {
+    namespace principle {
+      namespace mvp.v1 {
+        interface com.itbird.design.principle.mvp.v1.IPresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      interface com.itbird.design.principle.mvp.v1.IView {
+    namespace principle {
+      namespace mvp.v1 {
+        interface com.itbird.design.principle.mvp.v1.IView {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      class com.itbird.design.principle.mvp.v1.TaskMyActivity {
+    namespace principle {
+      namespace mvp.v1 {
+        class com.itbird.design.principle.mvp.v1.TaskMyActivity {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      interface com.itbird.design.principle.mvp.v1.TaskMyContract {
+    namespace principle {
+      namespace mvp.v1 {
+        interface com.itbird.design.principle.mvp.v1.TaskMyContract {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v1 {
-      class com.itbird.design.principle.mvp.v1.TaskMyPresenter {
+    namespace principle {
+      namespace mvp.v1 {
+        class com.itbird.design.principle.mvp.v1.TaskMyPresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v2 {
-      abstract class com.itbird.design.principle.mvp.v2.BaseActivity {
+    namespace principle {
+      namespace mvp.v2 {
+        abstract class com.itbird.design.principle.mvp.v2.BaseActivity {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v2 {
-      abstract class com.itbird.design.principle.mvp.v2.BasePresenter {
+    namespace principle {
+      namespace mvp.v2 {
+        abstract class com.itbird.design.principle.mvp.v2.BasePresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v2 {
-      class com.itbird.design.principle.mvp.v2.TaskMyActivity {
+    namespace principle {
+      namespace mvp.v2 {
+        class com.itbird.design.principle.mvp.v2.TaskMyActivity {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v2 {
-      interface com.itbird.design.principle.mvp.v2.TaskMyContract {
+    namespace principle {
+      namespace mvp.v2 {
+        interface com.itbird.design.principle.mvp.v2.TaskMyContract {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v2 {
-      class com.itbird.design.principle.mvp.v2.TaskMyPresenter {
+    namespace principle {
+      namespace mvp.v2 {
+        class com.itbird.design.principle.mvp.v2.TaskMyPresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      abstract class com.itbird.design.principle.mvp.v3.BaseActivity {
+    namespace principle {
+      namespace mvp.v3 {
+        abstract class com.itbird.design.principle.mvp.v3.BaseActivity {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      abstract class com.itbird.design.principle.mvp.v3.BaseFragment {
+    namespace principle {
+      namespace mvp.v3 {
+        abstract class com.itbird.design.principle.mvp.v3.BaseFragment {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      abstract class com.itbird.design.principle.mvp.v3.BasePresenter {
+    namespace principle {
+      namespace mvp.v3 {
+        abstract class com.itbird.design.principle.mvp.v3.BasePresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      interface com.itbird.design.principle.mvp.v3.IPresenter {
+    namespace principle {
+      namespace mvp.v3 {
+        interface com.itbird.design.principle.mvp.v3.IPresenter {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      class com.itbird.design.principle.mvp.v3.TaskMyActivity {
+    namespace principle {
+      namespace mvp.v3 {
+        class com.itbird.design.principle.mvp.v3.TaskMyActivity {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      interface com.itbird.design.principle.mvp.v3.TaskMyContract {
+    namespace principle {
+      namespace mvp.v3 {
+        interface com.itbird.design.principle.mvp.v3.TaskMyContract {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace principle.mvp.v3 {
-      class com.itbird.design.principle.mvp.v3.TaskMyPresenter {
+    namespace principle {
+      namespace mvp.v3 {
+        class com.itbird.design.principle.mvp.v3.TaskMyPresenter {
+        }
       }
     }
   }
@@ -741,14 +1031,6 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   namespace com.itbird.design {
     namespace singleton.activitymanager {
       class com.itbird.design.singleton.activitymanager.ActivityManager {
-      }
-    }
-  }
-  
-
-  namespace com.itbird.design {
-    namespace singleton.activitymanager {
-      class com.itbird.design.singleton.activitymanager.ActivityManagerTestActivity {
       }
     }
   }
@@ -773,6 +1055,14 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   namespace com.itbird.design {
     namespace singleton.activitymanager {
       class com.itbird.design.singleton.activitymanager.RegisterActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace singleton.activitymanager {
+      class com.itbird.design.singleton.activitymanager.SingletonActivity {
       }
     }
   }
@@ -827,6 +1117,30 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace template.demo {
+      abstract class com.itbird.design.template.demo.AbsTemplate {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace template.demo {
+      class com.itbird.design.template.demo.ConcreteImpl1 {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace template.demo {
+      class com.itbird.design.template.demo.ConcreteImpl2 {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace utils {
       class com.itbird.design.utils.CloseUtils {
       }
@@ -834,17 +1148,23 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   }
   
 
+  namespace com.itbird.design {
+    namespace utils {
+      class com.itbird.design.utils.UIHandler {
+      }
+    }
+  }
+  
+
   com.itbird.design.APP -up-|> android.app.Application
-  com.itbird.design.MainActivity .up.|> com.itbird.design.UIHandler.IHandler
-  com.itbird.design.MainActivity .up.|> com.itbird.design.observer.demo.Observer
   com.itbird.design.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
-  com.itbird.design.MainActivity o-- com.itbird.design.UIHandler : mUIHandler
-  com.itbird.design.UIHandler -up-|> android.os.Handler
+  com.itbird.design.builder.BuilderActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.builder.dialog.CommonDialog .up.|> android.content.DialogInterface
   com.itbird.design.builder.dialog.CommonDialog -up-|> android.app.Dialog
   com.itbird.design.builder.dialog.CommonDialog o-- com.itbird.design.builder.dialog.CommonDialog.ButtonHandler : handler
   com.itbird.design.builder.dialog.CommonProgressDialog -up-|> android.app.Dialog
   com.itbird.design.builder.dialog.CustomCountDownTimerDialog -up-|> android.app.Dialog
+  com.itbird.design.chaiin.ChainActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.chaiin.demo.Handler o-- com.itbird.design.chaiin.demo.Handler : next
   com.itbird.design.chaiin.demo.RequestHandler1 -up-|> com.itbird.design.chaiin.demo.Handler
   com.itbird.design.chaiin.demo.RequestHandler2 -up-|> com.itbird.design.chaiin.demo.Handler
@@ -857,6 +1177,17 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler o-- com.itbird.design.chaiin.upgrade.v1.UpgradeRequestHandler : nextHandler
   com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter .up.|> com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservable
   com.itbird.design.chaiin.upgrade.v1.UpgradeResultObservableAdapter -up-|> android.database.Observable
+  com.itbird.design.decorator.DecoratorActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.design.decorator.DecoratorActivity o-- com.itbird.design.decorator.DecoratorActivity.MyRecycleViewAdapter : adapter
+  com.itbird.design.decorator.demo.ComponentImplA -up-|> com.itbird.design.decorator.demo.DecoratorComponent
+  com.itbird.design.decorator.demo.ComponentImplB -up-|> com.itbird.design.decorator.demo.DecoratorComponent
+  com.itbird.design.decorator.demo.ConCreateComponent -up-|> com.itbird.design.decorator.demo.Component
+  com.itbird.design.decorator.demo.DecoratorComponent -up-|> com.itbird.design.decorator.demo.Component
+  com.itbird.design.decorator.demo.DecoratorComponent o-- com.itbird.design.decorator.demo.Component : component
+  com.itbird.design.decorator.recycleview.WrapperRecycleView -up-|> androidx.recyclerview.widget.RecyclerView
+  com.itbird.design.decorator.recycleview.WrapperRecycleView o-- com.itbird.design.decorator.recycleview.WrapperRecyclerAdapter : wrapperRecyclerAdapter
+  com.itbird.design.decorator.recycleview.WrapperRecyclerAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.itbird.design.factory.FactoryActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.factory.demo.v1.ConCreteIProductA .up.|> com.itbird.design.factory.demo.v1.IProduct
   com.itbird.design.factory.demo.v1.ConCreteIProductB .up.|> com.itbird.design.factory.demo.v1.IProduct
   com.itbird.design.factory.demo.v1.ConCreteIProductC .up.|> com.itbird.design.factory.demo.v1.IProduct
@@ -870,10 +1201,15 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.factory.storage.MemoryStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
   com.itbird.design.factory.storage.PreferencesStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
   com.itbird.design.factory.storage.StorageFactroy .up.|> com.itbird.design.factory.storage.IStorageFactroy
+  com.itbird.design.observer.ObserverActivity .up.|> com.itbird.design.observer.demo.Observer
+  com.itbird.design.observer.ObserverActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.observer.demo.ObservableImpl .up.|> com.itbird.design.observer.demo.Observable
   com.itbird.design.observer.listadapter.BaseAdapter .up.|> android.widget.ListAdapter
   com.itbird.design.observer.listadapter.BaseAdapter .up.|> android.widget.SpinnerAdapter
   com.itbird.design.observer.listadapter.DataSetObservable -up-|> com.itbird.design.observer.listadapter.Observable
+  com.itbird.design.principle.PrincipleActivity .up.|> com.itbird.design.utils.UIHandler.IHandler
+  com.itbird.design.principle.PrincipleActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.design.principle.PrincipleActivity o-- com.itbird.design.utils.UIHandler : mUIHandler
   com.itbird.design.principle.imageloader.v2.ImageDownload o-- com.itbird.design.principle.imageloader.v2.ImageDownload.DownloadCallback : mDownloadCallback
   com.itbird.design.principle.imageloader.v2.ImageLoader .up.|> com.itbird.design.principle.imageloader.v2.ImageDownload.DownloadCallback
   com.itbird.design.principle.imageloader.v2.ImageLoader o-- com.itbird.design.principle.imageloader.v2.ImageCache : mImageCache
@@ -920,10 +1256,13 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.principle.mvp.v3.TaskMyActivity -up-|> com.itbird.design.principle.mvp.v3.BaseActivity
   com.itbird.design.principle.mvp.v3.TaskMyPresenter .up.|> com.itbird.design.principle.mvp.v3.TaskMyContract.Presenter
   com.itbird.design.principle.mvp.v3.TaskMyPresenter -up-|> com.itbird.design.principle.mvp.v3.BasePresenter
-  com.itbird.design.singleton.activitymanager.ActivityManagerTestActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
   com.itbird.design.singleton.activitymanager.BaseActivity -up-|> android.app.Activity
   com.itbird.design.singleton.activitymanager.LoginActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
   com.itbird.design.singleton.activitymanager.RegisterActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
+  com.itbird.design.singleton.activitymanager.SingletonActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
+  com.itbird.design.template.demo.ConcreteImpl1 -up-|> com.itbird.design.template.demo.AbsTemplate
+  com.itbird.design.template.demo.ConcreteImpl2 -up-|> com.itbird.design.template.demo.AbsTemplate
+  com.itbird.design.utils.UIHandler -up-|> android.os.Handler
 
 
 right footer
