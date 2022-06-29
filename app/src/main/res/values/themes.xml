@@ -13,6 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
     <style name="common_dialog_style" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:windowFrame">@null</item>
         <!--边框-->
@@ -38,4 +39,11 @@
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
     </style>
+
+    <declare-styleable name="MyView">
+        <attr name="startx" format="float" />
+        <attr name="starty" format="float" />
+        <attr name="endx" format="float" />
+        <attr name="endy" format="float" />
+    </declare-styleable>
 </resources>

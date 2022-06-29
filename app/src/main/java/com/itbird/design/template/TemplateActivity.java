@@ -47,9 +47,6 @@ public class TemplateActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-        ImageView imageView = findViewById(R.id.imageview);
-        //glide源码中的模板方法模式
-        Glide.with(this).load("https://img-blog.csdn.net/20160903083245762").into(imageView);
         //Rxjava源码中的模板方法模式
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override

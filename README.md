@@ -72,3 +72,12 @@ IT行业，一直讲一句话，拼到最后都拼的是“内功”，而内功
 2.实践经验总结--BaseActivity实现
 
 3.详细见博客地址：https://blog.csdn.net/baobei0921/article/details/124667658
+
+# 2022/06/29
+模板模式是行为型设计模式的一种。策略模式定义了一系列算法，并将每个算法封装起来，而且使他们可以相互切换。
+
+1.Android源码设计模式探索与实战【策略模式】
+
+2.实践经验总结--ImageLoader框架的加强 & 自定义动画的实现
+
+3.详细见博客地址：https://blog.csdn.net/baobei0921/article/details/125516691

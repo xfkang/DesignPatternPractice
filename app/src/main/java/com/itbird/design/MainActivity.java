@@ -13,6 +13,7 @@ import com.itbird.design.factory.FactoryActivity;
 import com.itbird.design.observer.ObserverActivity;
 import com.itbird.design.principle.PrincipleActivity;
 import com.itbird.design.singleton.activitymanager.SingletonActivity;
+import com.itbird.design.strategy.StrategyActivity;
 import com.itbird.design.template.TemplateActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -85,5 +86,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void startActivity(Class<?> targetclass) {
         startActivity(new Intent(this, targetclass));
+    }
+
+    /**
+     * 测试策略模式
+     */
+    public void testStrategyPatterm(View view) {
+        startActivity(StrategyActivity.class);
     }
 }

@@ -33,6 +33,8 @@
         <activity android:name=".observer.ObserverActivity" />
         <activity android:name=".principle.PrincipleActivity" />
         <activity android:name=".template.TemplateActivity" />
+        <activity android:name=".strategy.StrategyActivity" />
+
     </application>
 
 </manifest>

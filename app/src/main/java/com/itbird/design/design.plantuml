@@ -20,6 +20,8 @@ title __DESIGN's Class Diagram__\n
         + testObserverPatterm()
         + testPrinciple()
         + testSingletomPatterm()
+        + testStrategyPatterm()
+        + testTemplatePatterm()
         # onCreate()
         - startActivity()
     }

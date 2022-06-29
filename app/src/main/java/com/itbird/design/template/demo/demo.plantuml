@@ -3,34 +3,40 @@
 title __DEMO's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace template.demo {
-      abstract class com.itbird.design.template.demo.AbsTemplate {
-          + execute()
-          {abstract} ~ step1()
-          {abstract} ~ step2()
-          {abstract} ~ step3()
+    namespace template {
+      namespace demo {
+        abstract class com.itbird.design.template.demo.AbsTemplate {
+            + execute()
+            {abstract} ~ step1()
+            {abstract} ~ step2()
+            {abstract} ~ step3()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace template.demo {
-      class com.itbird.design.template.demo.ConcreteImpl1 {
-          ~ step1()
-          ~ step2()
-          ~ step3()
+    namespace template {
+      namespace demo {
+        class com.itbird.design.template.demo.ConcreteImpl1 {
+            ~ step1()
+            ~ step2()
+            ~ step3()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace template.demo {
-      class com.itbird.design.template.demo.ConcreteImpl2 {
-          ~ step1()
-          ~ step2()
-          ~ step3()
+    namespace template {
+      namespace demo {
+        class com.itbird.design.template.demo.ConcreteImpl2 {
+            ~ step1()
+            ~ step2()
+            ~ step3()
+        }
       }
     }
   }

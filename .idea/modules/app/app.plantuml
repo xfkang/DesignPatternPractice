@@ -1117,24 +1117,334 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
-    namespace template.demo {
-      abstract class com.itbird.design.template.demo.AbsTemplate {
+    namespace strategy {
+      class com.itbird.design.strategy.CrashReportingTree {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace template.demo {
-      class com.itbird.design.template.demo.ConcreteImpl1 {
+    namespace strategy {
+      class com.itbird.design.strategy.StrategyActivity {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace template.demo {
-      class com.itbird.design.template.demo.ConcreteImpl2 {
+    namespace strategy {
+      namespace demo.compute.v1 {
+        class com.itbird.design.strategy.demo.compute.v1.Compute {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.compute.v2 {
+        class com.itbird.design.strategy.demo.compute.v2.ComputeADD {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.compute.v2 {
+        class com.itbird.design.strategy.demo.compute.v2.ComputeDel {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.compute.v2 {
+        class com.itbird.design.strategy.demo.compute.v2.ComputeDiv {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.compute.v2 {
+        class com.itbird.design.strategy.demo.compute.v2.ComputeMul {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.compute.v2 {
+        class com.itbird.design.strategy.demo.compute.v2.Context {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.compute.v2 {
+        interface com.itbird.design.strategy.demo.compute.v2.ICompute {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.interpolator {
+        class com.itbird.design.strategy.demo.interpolator.AccelerateDecelerateInterpolator {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.interpolator {
+        class com.itbird.design.strategy.demo.interpolator.AccelerateInterpolator {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.interpolator {
+        abstract class com.itbird.design.strategy.demo.interpolator.BaseInterpolator {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.interpolator {
+        interface com.itbird.design.strategy.demo.interpolator.Interpolator {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.interpolator {
+        class com.itbird.design.strategy.demo.interpolator.LinearInterpolator {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.interpolator {
+        class com.itbird.design.strategy.demo.interpolator.ObjectAnimator {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.interpolator {
+        interface com.itbird.design.strategy.demo.interpolator.TimeInterpolator {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.interpolator {
+        class com.itbird.design.strategy.demo.interpolator.ValueAnimator {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.money.v1 {
+        class com.itbird.design.strategy.demo.money.v1.FinanceManagerV1 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.money.v2 {
+        class com.itbird.design.strategy.demo.money.v2.FinanceContext {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.money.v2 {
+        interface com.itbird.design.strategy.demo.money.v2.IFinance {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.money.v2 {
+        class com.itbird.design.strategy.demo.money.v2.LiCaiTongFinance {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.money.v2 {
+        class com.itbird.design.strategy.demo.money.v2.YuEBaoFinance {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.recycleview {
+        class com.itbird.design.strategy.demo.recycleview.GridLayoutManager {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.recycleview {
+        class com.itbird.design.strategy.demo.recycleview.LinearLayoutManager {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.recycleview {
+        class com.itbird.design.strategy.demo.recycleview.RecyclerView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.retrofit {
+        interface com.itbird.design.strategy.demo.retrofit.Converter {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.retrofit {
+        class com.itbird.design.strategy.demo.retrofit.GsonConverterFactory {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.retrofit {
+        class com.itbird.design.strategy.demo.retrofit.Retrofit {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace strategy {
+      namespace demo.retrofit {
+        class com.itbird.design.strategy.demo.retrofit.SimpleXmlConverterFactory {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace template {
+      class com.itbird.design.template.TemplateActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace template {
+      namespace baseactivity {
+        abstract class com.itbird.design.template.baseactivity.BaseActivity {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace template {
+      namespace demo {
+        abstract class com.itbird.design.template.demo.AbsTemplate {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace template {
+      namespace demo {
+        class com.itbird.design.template.demo.ConcreteImpl1 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace template {
+      namespace demo {
+        class com.itbird.design.template.demo.ConcreteImpl2 {
+        }
       }
     }
   }
@@ -1260,6 +1570,27 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.singleton.activitymanager.LoginActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
   com.itbird.design.singleton.activitymanager.RegisterActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
   com.itbird.design.singleton.activitymanager.SingletonActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
+  com.itbird.design.strategy.CrashReportingTree -up-|> timber.log.Timber.Tree
+  com.itbird.design.strategy.StrategyActivity -up-|> com.itbird.design.template.baseactivity.BaseActivity
+  com.itbird.design.strategy.demo.compute.v2.ComputeADD .up.|> com.itbird.design.strategy.demo.compute.v2.ICompute
+  com.itbird.design.strategy.demo.compute.v2.ComputeDel .up.|> com.itbird.design.strategy.demo.compute.v2.ICompute
+  com.itbird.design.strategy.demo.compute.v2.ComputeDiv .up.|> com.itbird.design.strategy.demo.compute.v2.ICompute
+  com.itbird.design.strategy.demo.compute.v2.ComputeMul .up.|> com.itbird.design.strategy.demo.compute.v2.ICompute
+  com.itbird.design.strategy.demo.interpolator.AccelerateDecelerateInterpolator -up-|> com.itbird.design.strategy.demo.interpolator.BaseInterpolator
+  com.itbird.design.strategy.demo.interpolator.AccelerateInterpolator -up-|> com.itbird.design.strategy.demo.interpolator.BaseInterpolator
+  com.itbird.design.strategy.demo.interpolator.BaseInterpolator .up.|> com.itbird.design.strategy.demo.interpolator.Interpolator
+  com.itbird.design.strategy.demo.interpolator.LinearInterpolator -up-|> com.itbird.design.strategy.demo.interpolator.BaseInterpolator
+  com.itbird.design.strategy.demo.interpolator.ObjectAnimator -up-|> com.itbird.design.strategy.demo.interpolator.ValueAnimator
+  com.itbird.design.strategy.demo.money.v2.FinanceContext o-- com.itbird.design.strategy.demo.money.v2.IFinance : finance
+  com.itbird.design.strategy.demo.money.v2.LiCaiTongFinance .up.|> com.itbird.design.strategy.demo.money.v2.IFinance
+  com.itbird.design.strategy.demo.money.v2.YuEBaoFinance .up.|> com.itbird.design.strategy.demo.money.v2.IFinance
+  com.itbird.design.strategy.demo.recycleview.GridLayoutManager -up-|> com.itbird.design.strategy.demo.recycleview.LinearLayoutManager
+  com.itbird.design.strategy.demo.recycleview.LinearLayoutManager -up-|> com.itbird.design.strategy.demo.recycleview.RecyclerView.LayoutManager
+  com.itbird.design.strategy.demo.recycleview.RecyclerView -up-|> android.view.ViewGroup
+  com.itbird.design.strategy.demo.retrofit.GsonConverterFactory -up-|> com.itbird.design.strategy.demo.retrofit.Converter.Factory
+  com.itbird.design.strategy.demo.retrofit.SimpleXmlConverterFactory -up-|> com.itbird.design.strategy.demo.retrofit.Converter.Factory
+  com.itbird.design.template.TemplateActivity -up-|> com.itbird.design.template.baseactivity.BaseActivity
+  com.itbird.design.template.baseactivity.BaseActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.template.demo.ConcreteImpl1 -up-|> com.itbird.design.template.demo.AbsTemplate
   com.itbird.design.template.demo.ConcreteImpl2 -up-|> com.itbird.design.template.demo.AbsTemplate
   com.itbird.design.utils.UIHandler -up-|> android.os.Handler
