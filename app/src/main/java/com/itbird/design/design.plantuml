@@ -13,6 +13,7 @@ title __DESIGN's Class Diagram__\n
 
   namespace com.itbird.design {
     class com.itbird.design.MainActivity {
+        + testAdapterPatterm()
         + testBuilderPatterm()
         + testChainPatterm()
         + testDecoratorPatterm()

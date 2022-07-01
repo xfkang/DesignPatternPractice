@@ -11,81 +11,96 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testPrinciple"
-        android:text="点我测试面向对象六大基本原则" />
+        android:text="点我测试面向对象六大基本原则"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testBuilderPatterm"
-        android:text="点我测试建造者模式" />
+        android:text="点我测试建造者模式"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testChainPatterm"
-        android:text="点我测试责任链模式" />
+        android:text="点我测试责任链模式"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testDecoratorPatterm"
-        android:text="点我测试装饰者模式" />
+        android:text="点我测试装饰者模式"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testFactoryPatterm"
-        android:text="点我测试简单工厂模式" />
+
+        android:text="点我测试简单工厂模式"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testObserverPatterm"
-        android:text="点我测试观察者模式" />
+        android:text="点我测试观察者模式"
+
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testSingletomPatterm"
-        android:text="点我测试单例模式" />
+        android:text="点我测试单例模式"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testStrategyPatterm"
-        android:text="点我测试策略模式" />
+        android:text="点我测试策略模式"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="点我测试适配器模式" />
+        android:onClick="testAdapterPatterm"
+        android:text="点我测试适配器模式"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testFactoryPatterm"
-        android:text="点我测试抽象工厂模式" />
+        android:text="点我测试抽象工厂模式"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="testTemplatePatterm"
-        android:text="点我测试模板方法模式" />
+        android:text="点我测试模板方法模式"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="点我测试代理模式" />
+        android:text="点我测试代理模式"
+        android:textSize="25sp" />
 
 </LinearLayout>

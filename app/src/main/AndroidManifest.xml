@@ -34,6 +34,7 @@
         <activity android:name=".principle.PrincipleActivity" />
         <activity android:name=".template.TemplateActivity" />
         <activity android:name=".strategy.StrategyActivity" />
+        <activity android:name=".adapter.AdapterActivity" />
 
     </application>
 

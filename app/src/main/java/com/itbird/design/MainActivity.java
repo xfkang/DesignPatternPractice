@@ -3,9 +3,11 @@ package com.itbird.design;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.itbird.design.adapter.AdapterActivity;
 import com.itbird.design.builder.BuilderActivity;
 import com.itbird.design.chaiin.ChainActivity;
 import com.itbird.design.decorator.DecoratorActivity;
@@ -93,5 +95,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void testStrategyPatterm(View view) {
         startActivity(StrategyActivity.class);
+    }
+
+    /**
+     * 测试适配器模式
+     * @param view
+     */
+    public void testAdapterPatterm(View view) {
+        startActivity(AdapterActivity.class);
     }
 }

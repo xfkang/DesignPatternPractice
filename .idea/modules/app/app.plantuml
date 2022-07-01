@@ -21,6 +21,164 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace adapter {
+      class com.itbird.design.adapter.AdapterActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace demo {
+        class com.itbird.design.adapter.demo.Adaptee {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace demo {
+        class com.itbird.design.adapter.demo.ClassAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace demo {
+        class com.itbird.design.adapter.demo.ObjectAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace demo {
+        interface com.itbird.design.adapter.demo.Target {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.source {
+        interface com.itbird.design.adapter.listview.source.Adapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.source {
+        abstract class com.itbird.design.adapter.listview.source.BaseAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.source {
+        interface com.itbird.design.adapter.listview.source.ListAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.source {
+        class com.itbird.design.adapter.listview.source.ListView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.v1 {
+        class com.itbird.design.adapter.listview.v1.ItbirdListViewV1 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.v2 {
+        interface com.itbird.design.adapter.listview.v2.BaseAdapterV2 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.v2 {
+        class com.itbird.design.adapter.listview.v2.ItbirdListViewV2 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.v2 {
+        class com.itbird.design.adapter.listview.v2.ListAdapterV2 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.v3 {
+        interface com.itbird.design.adapter.listview.v3.BaseAdapterV3 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.v3 {
+        class com.itbird.design.adapter.listview.v3.ItbirdListViewV3 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace listview.v3 {
+        class com.itbird.design.adapter.listview.v3.ListAdapterV3 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace builder {
       class com.itbird.design.builder.BuilderActivity {
       }
@@ -1403,6 +1561,16 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace strategy {
+      namespace view {
+        class com.itbird.design.strategy.view.MyView {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace template {
       class com.itbird.design.template.TemplateActivity {
       }
@@ -1468,6 +1636,24 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
 
   com.itbird.design.APP -up-|> android.app.Application
   com.itbird.design.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.design.adapter.AdapterActivity -up-|> com.itbird.design.template.baseactivity.BaseActivity
+  com.itbird.design.adapter.AdapterActivity o-- com.itbird.design.adapter.listview.v1.ItbirdListViewV1 : listViewV1
+  com.itbird.design.adapter.AdapterActivity o-- com.itbird.design.adapter.listview.v2.ItbirdListViewV2 : listViewV2
+  com.itbird.design.adapter.AdapterActivity o-- com.itbird.design.adapter.listview.v3.ItbirdListViewV3 : listViewV3
+  com.itbird.design.adapter.demo.ClassAdapter .up.|> com.itbird.design.adapter.demo.Target
+  com.itbird.design.adapter.demo.ClassAdapter -up-|> com.itbird.design.adapter.demo.Adaptee
+  com.itbird.design.adapter.demo.ObjectAdapter .up.|> com.itbird.design.adapter.demo.Target
+  com.itbird.design.adapter.demo.ObjectAdapter o-- com.itbird.design.adapter.demo.Adaptee : adaptee
+  com.itbird.design.adapter.listview.source.BaseAdapter .up.|> android.widget.SpinnerAdapter
+  com.itbird.design.adapter.listview.source.BaseAdapter .up.|> com.itbird.design.adapter.listview.source.ListAdapter
+  com.itbird.design.adapter.listview.source.ListView o-- com.itbird.design.adapter.listview.source.ListAdapter : adapter
+  com.itbird.design.adapter.listview.v1.ItbirdListViewV1 -up-|> android.widget.ScrollView
+  com.itbird.design.adapter.listview.v2.ItbirdListViewV2 -up-|> android.widget.ScrollView
+  com.itbird.design.adapter.listview.v2.ItbirdListViewV2 o-- com.itbird.design.adapter.listview.v2.BaseAdapterV2 : adapter
+  com.itbird.design.adapter.listview.v2.ListAdapterV2 .up.|> com.itbird.design.adapter.listview.v2.BaseAdapterV2
+  com.itbird.design.adapter.listview.v3.ItbirdListViewV3 -up-|> android.widget.ScrollView
+  com.itbird.design.adapter.listview.v3.ItbirdListViewV3 o-- com.itbird.design.adapter.listview.v3.BaseAdapterV3 : mAdapter
+  com.itbird.design.adapter.listview.v3.ListAdapterV3 .up.|> com.itbird.design.adapter.listview.v3.BaseAdapterV3
   com.itbird.design.builder.BuilderActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.builder.dialog.CommonDialog .up.|> android.content.DialogInterface
   com.itbird.design.builder.dialog.CommonDialog -up-|> android.app.Dialog
@@ -1589,6 +1775,7 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.strategy.demo.recycleview.RecyclerView -up-|> android.view.ViewGroup
   com.itbird.design.strategy.demo.retrofit.GsonConverterFactory -up-|> com.itbird.design.strategy.demo.retrofit.Converter.Factory
   com.itbird.design.strategy.demo.retrofit.SimpleXmlConverterFactory -up-|> com.itbird.design.strategy.demo.retrofit.Converter.Factory
+  com.itbird.design.strategy.view.MyView -up-|> android.view.View
   com.itbird.design.template.TemplateActivity -up-|> com.itbird.design.template.baseactivity.BaseActivity
   com.itbird.design.template.baseactivity.BaseActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.template.demo.ConcreteImpl1 -up-|> com.itbird.design.template.demo.AbsTemplate

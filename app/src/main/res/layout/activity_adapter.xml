@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adapter.AdapterActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="testListViewV1"
+        android:text="点我测试ItbirdListViewV1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="testListViewV2"
+        android:text="点我测试ItbirdListViewV2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="testListViewV3"
+        android:text="点我测试ItbirdListViewV3" />
+
+    <com.itbird.design.adapter.listview.v1.ItbirdListViewV1
+        android:id="@+id/listviewv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.itbird.design.adapter.listview.v2.ItbirdListViewV2
+        android:id="@+id/listviewv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.itbird.design.adapter.listview.v3.ItbirdListViewV3
+        android:id="@+id/listviewv3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

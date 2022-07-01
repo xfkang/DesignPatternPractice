@@ -18,12 +18,12 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(getLayoutId());
         // 2. 初始化Title
         initTitle();
-        // 3. 初始化View
-        initView();
-        // 4. 访问接口数据（initData）
+        // 3. 访问接口数据（initData）
         if (isInitData()) {
             initData(savedInstanceState);
         }
+        // 4. 初始化View
+        initView();
     }
 
     /**

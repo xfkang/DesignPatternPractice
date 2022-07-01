@@ -4,12 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/drawable/progress_bar_background.xml" value="0.1" />
+        <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/activity_adapter.xml" value="0.23076923076923078" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/activity_common.xml" value="0.2826086956521739" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/activity_decorator.xml" value="0.2826086956521739" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/activity_strategy.xml" value="0.33" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/apa_no_button_dialog.xml" value="0.1" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/common_message_one_button_dialog.xml" value="0.2717391304347826" />
+        <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/item_listview.xml" value="0.30625" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/layout_header_view.xml" value="0.1" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/navigation_layout.xml" value="0.23641304347826086" />
         <entry key="..\:/workspace/DesignPatternPractice/app/src/main/res/layout/recycleview_item.xml" value="0.2826086956521739" />
