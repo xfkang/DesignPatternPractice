@@ -35,7 +35,7 @@
         <activity android:name=".template.TemplateActivity" />
         <activity android:name=".strategy.StrategyActivity" />
         <activity android:name=".adapter.AdapterActivity" />
-
+        <activity android:name=".proxy.ProxyActivity" />
     </application>
 
 </manifest>

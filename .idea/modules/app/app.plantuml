@@ -30,6 +30,46 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace adapter {
+      namespace classimpl {
+        class com.itbird.design.adapter.classimpl.Client {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace classimpl {
+        class com.itbird.design.adapter.classimpl.UpgradeModem {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace classimpl {
+        interface com.itbird.design.adapter.classimpl.UpgradeObserver {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
+      namespace classimpl {
+        abstract class com.itbird.design.adapter.classimpl.UpgradeObserverAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace adapter {
       namespace demo {
         class com.itbird.design.adapter.demo.Adaptee {
         }
@@ -1187,6 +1227,124 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace proxy {
+      class com.itbird.design.proxy.ProxyActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.dynamic.v1 {
+        class com.itbird.design.proxy.demo.dynamic.v1.Client {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.dynamic.v1 {
+        interface com.itbird.design.proxy.demo.dynamic.v1.IObject {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.dynamic.v1 {
+        class com.itbird.design.proxy.demo.dynamic.v1.ProxyObject {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.dynamic.v1 {
+        class com.itbird.design.proxy.demo.dynamic.v1.SourceObject {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.dynamic.v2 {
+        class com.itbird.design.proxy.demo.dynamic.v2.Client {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.dynamic.v2 {
+        class com.itbird.design.proxy.demo.dynamic.v2.ProxyMethodInterceptor {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.dynamic.v2 {
+        class com.itbird.design.proxy.demo.dynamic.v2.SourceObject {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.staticc {
+        class com.itbird.design.proxy.demo.staticc.Client {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.staticc {
+        interface com.itbird.design.proxy.demo.staticc.IObject {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.staticc {
+        class com.itbird.design.proxy.demo.staticc.ProxyObject {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace demo.staticc {
+        class com.itbird.design.proxy.demo.staticc.SourceObject {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace singleton.activitymanager {
       class com.itbird.design.singleton.activitymanager.ActivityManager {
       }
@@ -1640,6 +1798,7 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.adapter.AdapterActivity o-- com.itbird.design.adapter.listview.v1.ItbirdListViewV1 : listViewV1
   com.itbird.design.adapter.AdapterActivity o-- com.itbird.design.adapter.listview.v2.ItbirdListViewV2 : listViewV2
   com.itbird.design.adapter.AdapterActivity o-- com.itbird.design.adapter.listview.v3.ItbirdListViewV3 : listViewV3
+  com.itbird.design.adapter.classimpl.UpgradeObserverAdapter .up.|> com.itbird.design.adapter.classimpl.UpgradeObserver
   com.itbird.design.adapter.demo.ClassAdapter .up.|> com.itbird.design.adapter.demo.Target
   com.itbird.design.adapter.demo.ClassAdapter -up-|> com.itbird.design.adapter.demo.Adaptee
   com.itbird.design.adapter.demo.ObjectAdapter .up.|> com.itbird.design.adapter.demo.Target
@@ -1752,6 +1911,14 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.principle.mvp.v3.TaskMyActivity -up-|> com.itbird.design.principle.mvp.v3.BaseActivity
   com.itbird.design.principle.mvp.v3.TaskMyPresenter .up.|> com.itbird.design.principle.mvp.v3.TaskMyContract.Presenter
   com.itbird.design.principle.mvp.v3.TaskMyPresenter -up-|> com.itbird.design.principle.mvp.v3.BasePresenter
+  com.itbird.design.proxy.ProxyActivity .up.|> com.itbird.design.observer.demo.Observer
+  com.itbird.design.proxy.ProxyActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.design.proxy.demo.dynamic.v1.ProxyObject .up.|> java.lang.reflect.InvocationHandler
+  com.itbird.design.proxy.demo.dynamic.v1.SourceObject .up.|> com.itbird.design.proxy.demo.dynamic.v1.IObject
+  com.itbird.design.proxy.demo.dynamic.v2.ProxyMethodInterceptor .up.|> leo.android.cglib.proxy.MethodInterceptor
+  com.itbird.design.proxy.demo.staticc.ProxyObject .up.|> com.itbird.design.proxy.demo.staticc.IObject
+  com.itbird.design.proxy.demo.staticc.ProxyObject o-- com.itbird.design.proxy.demo.staticc.IObject : mSourceObject
+  com.itbird.design.proxy.demo.staticc.SourceObject .up.|> com.itbird.design.proxy.demo.staticc.IObject
   com.itbird.design.singleton.activitymanager.BaseActivity -up-|> android.app.Activity
   com.itbird.design.singleton.activitymanager.LoginActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity
   com.itbird.design.singleton.activitymanager.RegisterActivity -up-|> com.itbird.design.singleton.activitymanager.BaseActivity

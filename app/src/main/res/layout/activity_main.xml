@@ -101,6 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="点我测试代理模式"
+        android:onClick="testProxyPatterm"
         android:textSize="25sp" />
 
 </LinearLayout>

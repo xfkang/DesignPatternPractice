@@ -53,8 +53,6 @@ title __SOURCE's Class Diagram__\n
     namespace adapter {
       namespace listview.source {
         interface com.itbird.design.adapter.listview.source.ListAdapter {
-            {abstract} + areAllItemsEnabled()
-            {abstract} + isEnabled()
         }
       }
     }
@@ -71,7 +69,8 @@ title __SOURCE's Class Diagram__\n
     }
   }
   
-  com.itbird.design.adapter.listview.source.ListAdapter -up|>  com.itbird.design.adapter.listview.source.Adapter
+
+  com.itbird.design.adapter.listview.source.BaseAdapter .up.|> android.widget.SpinnerAdapter
   com.itbird.design.adapter.listview.source.BaseAdapter .up.|> com.itbird.design.adapter.listview.source.ListAdapter
   com.itbird.design.adapter.listview.source.ListView o-- com.itbird.design.adapter.listview.source.ListAdapter : adapter
 

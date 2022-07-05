@@ -14,6 +14,7 @@ import com.itbird.design.decorator.DecoratorActivity;
 import com.itbird.design.factory.FactoryActivity;
 import com.itbird.design.observer.ObserverActivity;
 import com.itbird.design.principle.PrincipleActivity;
+import com.itbird.design.proxy.ProxyActivity;
 import com.itbird.design.singleton.activitymanager.SingletonActivity;
 import com.itbird.design.strategy.StrategyActivity;
 import com.itbird.design.template.TemplateActivity;
@@ -103,5 +104,9 @@ public class MainActivity extends AppCompatActivity {
      */
     public void testAdapterPatterm(View view) {
         startActivity(AdapterActivity.class);
+    }
+
+    public void testProxyPatterm(View view) {
+        startActivity(ProxyActivity.class);
     }
 }
