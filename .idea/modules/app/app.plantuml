@@ -741,6 +741,90 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace iterator {
+      class com.itbird.design.iterator.IteratorActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo {
+        interface com.itbird.design.iterator.demo.BaseSystem {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo {
+        class com.itbird.design.iterator.demo.Userinfo {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo {
+        class com.itbird.design.iterator.demo.UserinfoSystemA {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo {
+        class com.itbird.design.iterator.demo.UserinfoSystemB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo {
+        namespace iterator {
+          class com.itbird.design.iterator.demo.iterator.ArrayIterator {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo {
+        namespace iterator {
+          interface com.itbird.design.iterator.demo.iterator.Iterator {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo {
+        namespace iterator {
+          class com.itbird.design.iterator.demo.iterator.ListIterator {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace observer {
       class com.itbird.design.observer.ObserverActivity {
       }
@@ -1227,6 +1311,94 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace prototype {
+      class com.itbird.design.prototype.PrototypeActivity {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace prototype {
+      namespace demo {
+        class com.itbird.design.prototype.demo.ConcreateProotype {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace prototype {
+      namespace demo {
+        abstract class com.itbird.design.prototype.demo.Prototype {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace prototype {
+      namespace word.v1 {
+        abstract class com.itbird.design.prototype.word.v1.IWordV1 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace prototype {
+      namespace word.v1 {
+        class com.itbird.design.prototype.word.v1.WordV1DataInfo {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace prototype {
+      namespace word.v2 {
+        abstract class com.itbird.design.prototype.word.v2.IWordV2 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace prototype {
+      namespace word.v2 {
+        class com.itbird.design.prototype.word.v2.WordV2DataInfo {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace prototype {
+      namespace word.v3 {
+        abstract class com.itbird.design.prototype.word.v3.IWordV3 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace prototype {
+      namespace word.v3 {
+        class com.itbird.design.prototype.word.v3.WordV3DataInfo {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace proxy {
       class com.itbird.design.proxy.ProxyActivity {
       }
@@ -1338,6 +1510,16 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
     namespace proxy {
       namespace demo.staticc {
         class com.itbird.design.proxy.demo.staticc.SourceObject {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace proxy {
+      namespace retrofit {
+        interface com.itbird.design.proxy.retrofit.BaseRequest {
         }
       }
     }
@@ -1856,6 +2038,11 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.factory.storage.MemoryStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
   com.itbird.design.factory.storage.PreferencesStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
   com.itbird.design.factory.storage.StorageFactroy .up.|> com.itbird.design.factory.storage.IStorageFactroy
+  com.itbird.design.iterator.IteratorActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.design.iterator.demo.UserinfoSystemA .up.|> com.itbird.design.iterator.demo.BaseSystem
+  com.itbird.design.iterator.demo.UserinfoSystemB .up.|> com.itbird.design.iterator.demo.BaseSystem
+  com.itbird.design.iterator.demo.iterator.ArrayIterator .up.|> com.itbird.design.iterator.demo.iterator.Iterator
+  com.itbird.design.iterator.demo.iterator.ListIterator .up.|> com.itbird.design.iterator.demo.iterator.Iterator
   com.itbird.design.observer.ObserverActivity .up.|> com.itbird.design.observer.demo.Observer
   com.itbird.design.observer.ObserverActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.observer.demo.ObservableImpl .up.|> com.itbird.design.observer.demo.Observable
@@ -1911,7 +2098,14 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.principle.mvp.v3.TaskMyActivity -up-|> com.itbird.design.principle.mvp.v3.BaseActivity
   com.itbird.design.principle.mvp.v3.TaskMyPresenter .up.|> com.itbird.design.principle.mvp.v3.TaskMyContract.Presenter
   com.itbird.design.principle.mvp.v3.TaskMyPresenter -up-|> com.itbird.design.principle.mvp.v3.BasePresenter
-  com.itbird.design.proxy.ProxyActivity .up.|> com.itbird.design.observer.demo.Observer
+  com.itbird.design.prototype.PrototypeActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.itbird.design.prototype.demo.ConcreateProotype -up-|> com.itbird.design.prototype.demo.Prototype
+  com.itbird.design.prototype.demo.Prototype .up.|> java.lang.Cloneable
+  com.itbird.design.prototype.word.v1.WordV1DataInfo -up-|> com.itbird.design.prototype.word.v1.IWordV1
+  com.itbird.design.prototype.word.v2.IWordV2 .up.|> java.lang.Cloneable
+  com.itbird.design.prototype.word.v2.WordV2DataInfo -up-|> com.itbird.design.prototype.word.v2.IWordV2
+  com.itbird.design.prototype.word.v3.IWordV3 .up.|> java.lang.Cloneable
+  com.itbird.design.prototype.word.v3.WordV3DataInfo -up-|> com.itbird.design.prototype.word.v3.IWordV3
   com.itbird.design.proxy.ProxyActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.proxy.demo.dynamic.v1.ProxyObject .up.|> java.lang.reflect.InvocationHandler
   com.itbird.design.proxy.demo.dynamic.v1.SourceObject .up.|> com.itbird.design.proxy.demo.dynamic.v1.IObject

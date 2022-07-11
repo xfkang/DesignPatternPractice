@@ -12,8 +12,10 @@ import com.itbird.design.builder.BuilderActivity;
 import com.itbird.design.chaiin.ChainActivity;
 import com.itbird.design.decorator.DecoratorActivity;
 import com.itbird.design.factory.FactoryActivity;
+import com.itbird.design.iterator.IteratorActivity;
 import com.itbird.design.observer.ObserverActivity;
 import com.itbird.design.principle.PrincipleActivity;
+import com.itbird.design.prototype.PrototypeActivity;
 import com.itbird.design.proxy.ProxyActivity;
 import com.itbird.design.singleton.activitymanager.SingletonActivity;
 import com.itbird.design.strategy.StrategyActivity;
@@ -108,5 +110,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void testProxyPatterm(View view) {
         startActivity(ProxyActivity.class);
+    }
+
+    public void testPrototypePatterm(View view) {        startActivity(PrototypeActivity.class);
+    }
+
+    public void testIteratorPatterm(View view) {        startActivity(IteratorActivity.class);
     }
 }

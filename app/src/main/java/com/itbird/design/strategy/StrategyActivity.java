@@ -136,7 +136,6 @@ public class StrategyActivity extends BaseActivity {
     private void testObjectAnimation() {
         //ObjectAnimator源码分析，内部使用策略模式
         ImageView imageView = findViewById(R.id.imageview);
-
         //为imageview设置旋转动画
         ObjectAnimator animator = ObjectAnimator.ofFloat(imageView, ImageView.ROTATION, 0f, 360f);
         //设置匀速执行
@@ -173,7 +172,7 @@ public class StrategyActivity extends BaseActivity {
     private void testTimer() {
         Timber.tag(TAG);
         if (BuildConfig.DEBUG) {
-            Timber.plant(new Timber.DebugTree());
+//            Timber.plant(new Timber.DebugTree());
         } else {
             Timber.plant(new CrashReportingTree());
         }

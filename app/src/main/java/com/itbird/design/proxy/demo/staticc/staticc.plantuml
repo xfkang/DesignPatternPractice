@@ -63,7 +63,6 @@ title __STATICC's Class Diagram__\n
   com.itbird.design.proxy.demo.staticc.ProxyObject o-- com.itbird.design.proxy.demo.staticc.IObject : mSourceObject
   com.itbird.design.proxy.demo.staticc.SourceObject .up.|> com.itbird.design.proxy.demo.staticc.IObject
 
-  com.itbird.design.proxy.demo.staticc.Client --> com.itbird.design.proxy.demo.staticc.IObject
 
 right footer
 

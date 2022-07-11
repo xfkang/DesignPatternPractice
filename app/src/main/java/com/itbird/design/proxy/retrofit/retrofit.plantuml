@@ -1,20 +1,19 @@
 @startuml
 
-title __PROXY's Class Diagram__\n
+title __RETROFIT's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace proxy {
-      class com.itbird.design.proxy.ProxyActivity {
-          # onCreate()
-          # onDestroy()
-          - tesProxyDynamicPatterm()
-          - testRetrofit()
+      namespace retrofit {
+        interface com.itbird.design.proxy.retrofit.BaseRequest {
+            {abstract} + getName()
+            {abstract} + setName()
+        }
       }
     }
   }
   
 
-  com.itbird.design.proxy.ProxyActivity -up-|> androidx.appcompat.app.AppCompatActivity
 
 
 right footer

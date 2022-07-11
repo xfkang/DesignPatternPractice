@@ -36,6 +36,13 @@
         <activity android:name=".strategy.StrategyActivity" />
         <activity android:name=".adapter.AdapterActivity" />
         <activity android:name=".proxy.ProxyActivity" />
+        <activity android:name=".prototype.PrototypeActivity" />
+        <activity android:name=".iterator.IteratorActivity" />
+
+        <provider
+            android:authorities="com.itbird.design.iterator.database.DataProvider"
+            android:name=".iterator.database.DataProvider"/>
+
     </application>
 
 </manifest>
