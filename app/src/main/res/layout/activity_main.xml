@@ -123,5 +123,13 @@
             android:onClick="testIteratorPatterm"
             android:text="点我测试迭代器模式"
             android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button134012"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="testFlyWeightPatterm"
+            android:text="点我测试享元模式"
+            android:textSize="25sp" />
     </LinearLayout>
 </ScrollView>

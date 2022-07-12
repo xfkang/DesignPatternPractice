@@ -6,12 +6,14 @@ title __ITERATOR's Class Diagram__\n
     namespace iterator {
       class com.itbird.design.iterator.IteratorActivity {
           {static} - TAG : String
-          + printAllUserInfo()
+          + searchAllUserInfo()
           # onCreate()
           # onDestroy()
           - tesIteratorV1()
           - tesIteratorV2()
           - tesPrintSystemUserinfo()
+          - viewArrayListAndHashmapSource()
+          - viewCursorSource()
       }
     }
   }

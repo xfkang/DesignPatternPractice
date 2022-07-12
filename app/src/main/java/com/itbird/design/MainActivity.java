@@ -12,6 +12,8 @@ import com.itbird.design.builder.BuilderActivity;
 import com.itbird.design.chaiin.ChainActivity;
 import com.itbird.design.decorator.DecoratorActivity;
 import com.itbird.design.factory.FactoryActivity;
+import com.itbird.design.flyweight.FlyWeightActivity;
+import com.itbird.design.flyweight.demo.FlyWeight;
 import com.itbird.design.iterator.IteratorActivity;
 import com.itbird.design.observer.ObserverActivity;
 import com.itbird.design.principle.PrincipleActivity;
@@ -116,5 +118,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void testIteratorPatterm(View view) {        startActivity(IteratorActivity.class);
+    }
+    public void testFlyWeightPatterm(View view) {
+        startActivity(FlyWeightActivity.class);
     }
 }

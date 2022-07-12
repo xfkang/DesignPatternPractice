@@ -4,9 +4,9 @@ title __ITERATOR's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
+      namespace usersystem {
         namespace iterator {
-          class com.itbird.design.iterator.demo.iterator.ArrayIterator {
+          class com.itbird.design.iterator.usersystem.iterator.ArrayIterator {
               ~ currentIndex : int
               ~ list : T[]
               + hasNext()
@@ -21,9 +21,9 @@ title __ITERATOR's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
+      namespace usersystem {
         namespace iterator {
-          interface com.itbird.design.iterator.demo.iterator.Iterator {
+          interface com.itbird.design.iterator.usersystem.iterator.Iterator {
               {abstract} + hasNext()
               {abstract} + next()
           }
@@ -35,9 +35,9 @@ title __ITERATOR's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
+      namespace usersystem {
         namespace iterator {
-          class com.itbird.design.iterator.demo.iterator.ListIterator {
+          class com.itbird.design.iterator.usersystem.iterator.ListIterator {
               ~ currentIndex : int
               ~ list : List<T>
               + hasNext()
@@ -50,8 +50,8 @@ title __ITERATOR's Class Diagram__\n
   }
   
 
-  com.itbird.design.iterator.demo.iterator.ArrayIterator .up.|> com.itbird.design.iterator.demo.iterator.Iterator
-  com.itbird.design.iterator.demo.iterator.ListIterator .up.|> com.itbird.design.iterator.demo.iterator.Iterator
+  com.itbird.design.iterator.usersystem.iterator.ArrayIterator .up.|> com.itbird.design.iterator.usersystem.iterator.Iterator
+  com.itbird.design.iterator.usersystem.iterator.ListIterator .up.|> com.itbird.design.iterator.usersystem.iterator.Iterator
 
 
 right footer

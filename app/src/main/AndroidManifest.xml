@@ -38,10 +38,11 @@
         <activity android:name=".proxy.ProxyActivity" />
         <activity android:name=".prototype.PrototypeActivity" />
         <activity android:name=".iterator.IteratorActivity" />
+        <activity android:name=".flyweight.FlyWeightActivity"/>
 
         <provider
-            android:authorities="com.itbird.design.iterator.database.DataProvider"
-            android:name=".iterator.database.DataProvider"/>
+            android:name=".iterator.database.DataProvider"
+            android:authorities="com.itbird.design.iterator.database.DataProvider" />
 
     </application>
 

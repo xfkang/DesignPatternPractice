@@ -741,6 +741,30 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace flyweight.demo {
+      class com.itbird.design.flyweight.demo.ConcreateFlyWeight {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace flyweight.demo {
+      interface com.itbird.design.flyweight.demo.FlyWeight {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace flyweight.demo {
+      class com.itbird.design.flyweight.demo.FlyWeightFactory {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace iterator {
       class com.itbird.design.iterator.IteratorActivity {
       }
@@ -750,8 +774,8 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
-        interface com.itbird.design.iterator.demo.BaseSystem {
+      namespace database {
+        class com.itbird.design.iterator.database.DBHelper {
         }
       }
     }
@@ -760,8 +784,8 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
-        class com.itbird.design.iterator.demo.Userinfo {
+      namespace database {
+        class com.itbird.design.iterator.database.DataProvider {
         }
       }
     }
@@ -770,8 +794,8 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
-        class com.itbird.design.iterator.demo.UserinfoSystemA {
+      namespace demo.v1 {
+        class com.itbird.design.iterator.demo.v1.Client {
         }
       }
     }
@@ -780,8 +804,8 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
-        class com.itbird.design.iterator.demo.UserinfoSystemB {
+      namespace demo.v1 {
+        class com.itbird.design.iterator.demo.v1.WordInfo {
         }
       }
     }
@@ -790,9 +814,49 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
+      namespace demo.v2 {
+        class com.itbird.design.iterator.demo.v2.Client {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo.v2 {
+        class com.itbird.design.iterator.demo.v2.WordInfo {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo.v3 {
+        class com.itbird.design.iterator.demo.v3.Client {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo.v3 {
+        class com.itbird.design.iterator.demo.v3.WordInfo {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace demo.v3 {
         namespace iterator {
-          class com.itbird.design.iterator.demo.iterator.ArrayIterator {
+          interface com.itbird.design.iterator.demo.v3.iterator.Iterator {
           }
         }
       }
@@ -802,9 +866,9 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
+      namespace demo.v3 {
         namespace iterator {
-          interface com.itbird.design.iterator.demo.iterator.Iterator {
+          class com.itbird.design.iterator.demo.v3.iterator.ListIterator {
           }
         }
       }
@@ -814,9 +878,85 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
 
   namespace com.itbird.design {
     namespace iterator {
-      namespace demo {
+      namespace demo.v3 {
         namespace iterator {
-          class com.itbird.design.iterator.demo.iterator.ListIterator {
+          class com.itbird.design.iterator.demo.v3.iterator.NodeIterator {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace usersystem {
+        interface com.itbird.design.iterator.usersystem.BaseSystem {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace usersystem {
+        class com.itbird.design.iterator.usersystem.Userinfo {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace usersystem {
+        class com.itbird.design.iterator.usersystem.UserinfoSystemA {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace usersystem {
+        class com.itbird.design.iterator.usersystem.UserinfoSystemB {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace usersystem {
+        namespace iterator {
+          class com.itbird.design.iterator.usersystem.iterator.ArrayIterator {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace usersystem {
+        namespace iterator {
+          interface com.itbird.design.iterator.usersystem.iterator.Iterator {
+          }
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace iterator {
+      namespace usersystem {
+        namespace iterator {
+          class com.itbird.design.iterator.usersystem.iterator.ListIterator {
           }
         }
       }
@@ -2038,11 +2178,20 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.factory.storage.MemoryStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
   com.itbird.design.factory.storage.PreferencesStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
   com.itbird.design.factory.storage.StorageFactroy .up.|> com.itbird.design.factory.storage.IStorageFactroy
+  com.itbird.design.flyweight.demo.ConcreateFlyWeight .up.|> com.itbird.design.flyweight.demo.FlyWeight
   com.itbird.design.iterator.IteratorActivity -up-|> androidx.appcompat.app.AppCompatActivity
-  com.itbird.design.iterator.demo.UserinfoSystemA .up.|> com.itbird.design.iterator.demo.BaseSystem
-  com.itbird.design.iterator.demo.UserinfoSystemB .up.|> com.itbird.design.iterator.demo.BaseSystem
-  com.itbird.design.iterator.demo.iterator.ArrayIterator .up.|> com.itbird.design.iterator.demo.iterator.Iterator
-  com.itbird.design.iterator.demo.iterator.ListIterator .up.|> com.itbird.design.iterator.demo.iterator.Iterator
+  com.itbird.design.iterator.database.DBHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.itbird.design.iterator.database.DataProvider -up-|> android.content.ContentProvider
+  com.itbird.design.iterator.database.DataProvider o-- com.itbird.design.iterator.database.DBHelper : dbHelper
+  com.itbird.design.iterator.demo.v2.WordInfo o-- com.itbird.design.iterator.demo.v2.WordInfo.Node : node
+  com.itbird.design.iterator.demo.v3.WordInfo o-- com.itbird.design.iterator.demo.v3.WordInfo.Node : node
+  com.itbird.design.iterator.demo.v3.iterator.ListIterator .up.|> com.itbird.design.iterator.usersystem.iterator.Iterator
+  com.itbird.design.iterator.demo.v3.iterator.NodeIterator .up.|> com.itbird.design.iterator.demo.v3.iterator.Iterator
+  com.itbird.design.iterator.demo.v3.iterator.NodeIterator o-- com.itbird.design.iterator.demo.v3.WordInfo.Node : node
+  com.itbird.design.iterator.usersystem.UserinfoSystemA .up.|> com.itbird.design.iterator.usersystem.BaseSystem
+  com.itbird.design.iterator.usersystem.UserinfoSystemB .up.|> com.itbird.design.iterator.usersystem.BaseSystem
+  com.itbird.design.iterator.usersystem.iterator.ArrayIterator .up.|> com.itbird.design.iterator.usersystem.iterator.Iterator
+  com.itbird.design.iterator.usersystem.iterator.ListIterator .up.|> com.itbird.design.iterator.usersystem.iterator.Iterator
   com.itbird.design.observer.ObserverActivity .up.|> com.itbird.design.observer.demo.Observer
   com.itbird.design.observer.ObserverActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.observer.demo.ObservableImpl .up.|> com.itbird.design.observer.demo.Observable
