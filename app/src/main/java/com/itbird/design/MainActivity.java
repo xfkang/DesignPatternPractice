@@ -11,6 +11,7 @@ import com.itbird.design.adapter.AdapterActivity;
 import com.itbird.design.builder.BuilderActivity;
 import com.itbird.design.chaiin.ChainActivity;
 import com.itbird.design.decorator.DecoratorActivity;
+import com.itbird.design.facade.FacadeActivity;
 import com.itbird.design.factory.FactoryActivity;
 import com.itbird.design.flyweight.FlyWeightActivity;
 import com.itbird.design.flyweight.demo.FlyWeight;
@@ -58,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void testBuilderPatterm(View view) {
         startActivity(BuilderActivity.class);
-
     }
 
 
@@ -121,5 +121,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void testFlyWeightPatterm(View view) {
         startActivity(FlyWeightActivity.class);
+    }
+    public void testFacadePatterm(View view) {
+        startActivity(FacadeActivity.class);
     }
 }

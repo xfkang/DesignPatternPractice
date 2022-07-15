@@ -18,6 +18,7 @@ title __DESIGN's Class Diagram__\n
         + testChainPatterm()
         + testDecoratorPatterm()
         + testFactoryPatterm()
+        + testFlyWeightPatterm()
         + testIteratorPatterm()
         + testObserverPatterm()
         + testPrinciple()

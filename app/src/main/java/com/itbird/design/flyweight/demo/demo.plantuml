@@ -3,35 +3,40 @@
 title __DEMO's Class Diagram__\n
 
   namespace com.itbird.design {
-    namespace flyweight.demo {
-      class com.itbird.design.flyweight.demo.ConcreateFlyWeight {
-          + doSomething()
+    namespace flyweight {
+      namespace demo {
+        class com.itbird.design.flyweight.demo.ConcreateFlyWeight {
+            + doSomething()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace flyweight.demo {
-      interface com.itbird.design.flyweight.demo.FlyWeight {
-          {abstract} + doSomething()
+    namespace flyweight {
+      namespace demo {
+        interface com.itbird.design.flyweight.demo.FlyWeight {
+            {abstract} + doSomething()
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace flyweight.demo {
-      class com.itbird.design.flyweight.demo.FlyWeightFactory {
-          ~ concreateFlyWeights : HashMap<String, ConcreateFlyWeight>
-          + getFlyWeight()
+    namespace flyweight {
+      namespace demo {
+        class com.itbird.design.flyweight.demo.FlyWeightFactory {
+            ~ concreateFlyWeights : HashMap<String, ConcreateFlyWeight>
+            + getFlyWeight()
+        }
       }
     }
   }
   
 
   com.itbird.design.flyweight.demo.ConcreateFlyWeight .up.|> com.itbird.design.flyweight.demo.FlyWeight
-  com.itbird.design.flyweight.demo.ConcreateFlyWeight .o com.itbird.design.flyweight.demo.FlyWeightFactory
 
 
 right footer

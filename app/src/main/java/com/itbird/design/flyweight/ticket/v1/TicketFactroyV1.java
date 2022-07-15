@@ -10,7 +10,7 @@ public class TicketFactroyV1 {
     private static final String TAG = TicketFactroyV1.class.getSimpleName();
 
     public ITicket getTicket(String start, String end) {
-        Log.d(TAG, "NEW Ticket");
+
         return new Ticket(start, end);
     }
 }

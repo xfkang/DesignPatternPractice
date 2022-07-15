@@ -88,9 +88,9 @@ public class DecoratorActivity extends AppCompatActivity {
         wrapperRecycleView.setAdapter(adapter);
         wrapperRecycleView.addHeadView(LayoutInflater.from(this).inflate(R.layout.layout_header_view, wrapperRecycleView, false));
         wrapperRecycleView.addFootView(new Button(this));
-
         //这时再去考虑一个事情，我们通过装饰者模式把adapter封装了一层，如果adpater有数据更新，导致变动，这时会有问题吗？
         //这时会发现，并未更新，原因是装饰类，并未做事件响应
+        adapter.notifyDataSetChanged();
     }
 
     static class MyRecycleViewAdapter extends RecyclerView.Adapter {

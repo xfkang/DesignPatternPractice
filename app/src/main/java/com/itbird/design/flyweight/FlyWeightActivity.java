@@ -17,9 +17,6 @@ import com.itbird.design.flyweight.eventbus.EventMsg;
 import com.itbird.design.flyweight.ticket.v1.TicketFactroyV1;
 import com.itbird.design.flyweight.ticket.v2.TicketFactroyV2;
 
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 
 
 /**
@@ -53,15 +50,15 @@ public class FlyWeightActivity extends AppCompatActivity {
      * 查看EventBus源码
      */
     private void testEventBus() {
-        EventBus.getDefault().register(this);
-        EventBus.getDefault().unregister(this);
-        EventBus.getDefault().post(new EventMsg("k"));
+//        EventBus.getDefault().register(this);
+//        EventBus.getDefault().unregister(this);
+//        EventBus.getDefault().post(new EventMsg("k"));
     }
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    private void receiverEventBusMsg(EventMsg msg) {
-        //todo 处理消息
-    }
+//    @Subscribe(threadMode = ThreadMode.MAIN)
+//    private void receiverEventBusMsg(EventMsg msg) {
+//        //todo 处理消息
+//    }
 
     /**
      * 查看jdk源码

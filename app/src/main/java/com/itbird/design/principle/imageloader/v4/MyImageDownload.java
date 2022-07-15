@@ -3,7 +3,6 @@ package com.itbird.design.principle.imageloader.v4;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
-import android.widget.ImageView;
 
 import com.itbird.design.utils.CloseUtils;
 
@@ -12,15 +11,18 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.PriorityBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 下载功能类
  * Created by itbird on 2022/3/28
  */
 public class MyImageDownload implements IDownloadRequest {
-    private ExecutorService mExecutor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+    private final int CORE_THREAD_SIZE = Runtime.getRuntime().availableProcessors() + 1;
+    private final int MAX_THREAD_SIZE = CORE_THREAD_SIZE;
+    private ThreadPoolExecutor mExecutor = new ThreadPoolExecutor(CORE_THREAD_SIZE, MAX_THREAD_SIZE, 60, TimeUnit.MILLISECONDS, new PriorityBlockingQueue<>());
     private final String TAG = MyImageDownload.class.getSimpleName();
 
     public MyImageDownload() {

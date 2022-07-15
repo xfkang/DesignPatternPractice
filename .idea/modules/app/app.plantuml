@@ -533,6 +533,102 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
+    namespace facade.demo {
+      class com.itbird.design.facade.demo.Facade {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.demo {
+      interface com.itbird.design.facade.demo.ISystemM {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.demo {
+      class com.itbird.design.facade.demo.SystemA {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.demo {
+      class com.itbird.design.facade.demo.SystemB {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.demo {
+      class com.itbird.design.facade.demo.SystemC {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.mobile {
+      class com.itbird.design.facade.mobile.Camera {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.mobile {
+      interface com.itbird.design.facade.mobile.ICamera {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.mobile {
+      interface com.itbird.design.facade.mobile.IMusic {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.mobile {
+      interface com.itbird.design.facade.mobile.Iphone {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.mobile {
+      class com.itbird.design.facade.mobile.Mobile {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.mobile {
+      class com.itbird.design.facade.mobile.Music {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace facade.mobile {
+      class com.itbird.design.facade.mobile.Phone {
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
     namespace factory {
       class com.itbird.design.factory.FactoryActivity {
       }
@@ -741,24 +837,88 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   
 
   namespace com.itbird.design {
-    namespace flyweight.demo {
-      class com.itbird.design.flyweight.demo.ConcreateFlyWeight {
+    namespace flyweight {
+      class com.itbird.design.flyweight.FlyWeightActivity {
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace flyweight.demo {
-      interface com.itbird.design.flyweight.demo.FlyWeight {
+    namespace flyweight {
+      namespace demo {
+        class com.itbird.design.flyweight.demo.ConcreateFlyWeight {
+        }
       }
     }
   }
   
 
   namespace com.itbird.design {
-    namespace flyweight.demo {
-      class com.itbird.design.flyweight.demo.FlyWeightFactory {
+    namespace flyweight {
+      namespace demo {
+        interface com.itbird.design.flyweight.demo.FlyWeight {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace flyweight {
+      namespace demo {
+        class com.itbird.design.flyweight.demo.FlyWeightFactory {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace flyweight {
+      namespace eventbus {
+        class com.itbird.design.flyweight.eventbus.EventMsg {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace flyweight {
+      namespace ticket.v1 {
+        abstract class com.itbird.design.flyweight.ticket.v1.ITicket {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace flyweight {
+      namespace ticket.v1 {
+        class com.itbird.design.flyweight.ticket.v1.Ticket {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace flyweight {
+      namespace ticket.v1 {
+        class com.itbird.design.flyweight.ticket.v1.TicketFactroyV1 {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.itbird.design {
+    namespace flyweight {
+      namespace ticket.v2 {
+        class com.itbird.design.flyweight.ticket.v2.TicketFactroyV2 {
+        }
       }
     }
   }
@@ -2164,6 +2324,18 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.decorator.recycleview.WrapperRecycleView -up-|> androidx.recyclerview.widget.RecyclerView
   com.itbird.design.decorator.recycleview.WrapperRecycleView o-- com.itbird.design.decorator.recycleview.WrapperRecyclerAdapter : wrapperRecyclerAdapter
   com.itbird.design.decorator.recycleview.WrapperRecyclerAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.itbird.design.facade.demo.Facade o-- com.itbird.design.facade.demo.SystemA : systemA
+  com.itbird.design.facade.demo.Facade o-- com.itbird.design.facade.demo.SystemB : systemB
+  com.itbird.design.facade.demo.Facade o-- com.itbird.design.facade.demo.SystemC : systemC
+  com.itbird.design.facade.demo.SystemA .up.|> com.itbird.design.facade.demo.ISystemM
+  com.itbird.design.facade.demo.SystemB .up.|> com.itbird.design.facade.demo.ISystemM
+  com.itbird.design.facade.demo.SystemC .up.|> com.itbird.design.facade.demo.ISystemM
+  com.itbird.design.facade.mobile.Camera .up.|> com.itbird.design.facade.mobile.ICamera
+  com.itbird.design.facade.mobile.Mobile o-- com.itbird.design.facade.mobile.ICamera : camera
+  com.itbird.design.facade.mobile.Mobile o-- com.itbird.design.facade.mobile.Iphone : iphone
+  com.itbird.design.facade.mobile.Mobile o-- com.itbird.design.facade.mobile.IMusic : music
+  com.itbird.design.facade.mobile.Music .up.|> com.itbird.design.facade.mobile.IMusic
+  com.itbird.design.facade.mobile.Phone .up.|> com.itbird.design.facade.mobile.Iphone
   com.itbird.design.factory.FactoryActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.factory.demo.v1.ConCreteIProductA .up.|> com.itbird.design.factory.demo.v1.IProduct
   com.itbird.design.factory.demo.v1.ConCreteIProductB .up.|> com.itbird.design.factory.demo.v1.IProduct
@@ -2178,7 +2350,9 @@ title __DESIGNPATTERNPRACTICE.APP's Class Diagram__\n
   com.itbird.design.factory.storage.MemoryStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
   com.itbird.design.factory.storage.PreferencesStorageHandler .up.|> com.itbird.design.factory.storage.IStorage
   com.itbird.design.factory.storage.StorageFactroy .up.|> com.itbird.design.factory.storage.IStorageFactroy
+  com.itbird.design.flyweight.FlyWeightActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.flyweight.demo.ConcreateFlyWeight .up.|> com.itbird.design.flyweight.demo.FlyWeight
+  com.itbird.design.flyweight.ticket.v1.Ticket -up-|> com.itbird.design.flyweight.ticket.v1.ITicket
   com.itbird.design.iterator.IteratorActivity -up-|> androidx.appcompat.app.AppCompatActivity
   com.itbird.design.iterator.database.DBHelper -up-|> android.database.sqlite.SQLiteOpenHelper
   com.itbird.design.iterator.database.DataProvider -up-|> android.content.ContentProvider
