@@ -10,19 +10,19 @@ import androidx.annotation.Nullable;
  */
 public abstract class BaseActivity extends Activity {
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayout());
         ActivityManager.getInstance().addActivity(this);
         init();
     }
 
-    abstract int getLayout();
+    public abstract int getLayout();
 
-    abstract void init();
+    public abstract void init();
 
     @Override
-    protected void onDestroy() {
+    public void onDestroy() {
         super.onDestroy();
         ActivityManager.getInstance().finishActivity(this);
     }

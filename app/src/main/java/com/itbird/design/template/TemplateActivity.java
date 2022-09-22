@@ -19,7 +19,10 @@ import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.functions.Function;
 
 /**
- * 模板方法模式
+ * 测试模板方法模式
+ * 模板模式，Activity生命周期、AsyncTask、View绘制，BaseActivity的实现
+ * 钩子：模板设计模式用来控制父类的流程，方法不要都写入BaseActivity，方法数，弄成工具类
+ * 补充：三方框架的实现，插件化开发hook启动流程
  * Created by itbird on 2022/6/15
  */
 public class TemplateActivity extends BaseActivity {

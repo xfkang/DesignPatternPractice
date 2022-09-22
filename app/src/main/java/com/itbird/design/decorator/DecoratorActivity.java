@@ -26,6 +26,7 @@ import java.util.List;
 
 /**
  * 测试装饰者模式
+ * 装饰者模式，recycleview扩展，context源码解析，rxjava源码解析，hook实战
  * Created by itbird on 2022/6/9
  */
 public class DecoratorActivity extends AppCompatActivity {

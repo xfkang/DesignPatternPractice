@@ -57,7 +57,7 @@ public class ItbirdListViewV3 extends ScrollView {
         mContext = context;
         linearLayout = new LinearLayout(context);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
-        addView(linearLayout, 0);
+        super.addView(linearLayout);
     }
 
     public void addView(View view) {
@@ -71,10 +71,7 @@ public class ItbirdListViewV3 extends ScrollView {
 
         @Override
         public void onChanged() {
-            removeAllViews();
-            //请空所有view之后，一定要置linearLayout为空，因为removeAllViews只是会清空当前的所有view，并不会将其置空
-            // 也就会导致addview后面的视图添加到之前的视图中，同时也有可能存在内存泄露
-            linearLayout = null;
+            linearLayout.removeAllViews();
             //根据适配器数据，进行view的添加
             for (int i = 0; i < mAdapter.getCount(); i++) {
                 addView(mAdapter.getItemView(i));

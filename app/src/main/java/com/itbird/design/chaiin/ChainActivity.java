@@ -16,6 +16,7 @@ import com.itbird.design.chaiin.upgrade.v1.UpgradeManager;
 
 /**
  * 测试责任链模式
+ * 责任链模式，view事件分发机制，多系统升级框架设计，okhttp源码分析
  * Created by itbird on 2022/6/9
  */
 public class ChainActivity extends AppCompatActivity  {

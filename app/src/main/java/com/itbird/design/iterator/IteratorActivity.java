@@ -1,7 +1,6 @@
 package com.itbird.design.iterator;
 
 
-import android.content.ContentProvider;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -24,6 +23,8 @@ import java.util.Map;
 
 /**
  * 测试迭代器模式
+ * 迭代器模式，定义，wx与qq的用户系统查询，服务端与客户端的约定（不一定是数据格式，也可以是一个接口），
+ * 补存：底部导航栏的实现方式（RadioGroup、BottomNavigationView、自定义View、迭代器模式的TabBottomNavigation）
  * Created by itbird on 2022/7/4
  */
 public class IteratorActivity extends AppCompatActivity {

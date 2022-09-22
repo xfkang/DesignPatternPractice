@@ -3,7 +3,6 @@ package com.itbird.design;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,13 +13,12 @@ import com.itbird.design.decorator.DecoratorActivity;
 import com.itbird.design.facade.FacadeActivity;
 import com.itbird.design.factory.FactoryActivity;
 import com.itbird.design.flyweight.FlyWeightActivity;
-import com.itbird.design.flyweight.demo.FlyWeight;
 import com.itbird.design.iterator.IteratorActivity;
 import com.itbird.design.observer.ObserverActivity;
 import com.itbird.design.principle.PrincipleActivity;
 import com.itbird.design.prototype.PrototypeActivity;
 import com.itbird.design.proxy.ProxyActivity;
-import com.itbird.design.singleton.activitymanager.SingletonActivity;
+import com.itbird.design.singleton.SingletonActivity;
 import com.itbird.design.strategy.StrategyActivity;
 import com.itbird.design.template.TemplateActivity;
 

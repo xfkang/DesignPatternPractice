@@ -31,7 +31,10 @@ import retrofit2.Retrofit;
 import timber.log.Timber;
 
 /**
- * 策略模式
+ * 测试策略模式
+ * 策略模式，介绍，里斯替换，区别，android源码中RecyclerView: setLayoutManager
+ * 属性动画源码插值器和估值器
+ * log日志输出策略，Glide 的缓存策略/imageloader的png的命名策略/timber 日志打印工具的策略/OKhttp 部分
  * Created by itbird on 2022/6/20
  */
 public class StrategyActivity extends BaseActivity {

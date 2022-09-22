@@ -29,6 +29,9 @@ import retrofit2.Retrofit;
 
 /**
  * 测试代理模式
+ * 代理模式，定义，静态代理（接口变动需要变动proxy，代理类很多，编写代码时实时增加，其实动态代理，一个就可以代替所有）
+ * 动态代理，retorfit.create，传入的实际是一个接口，那么动态代理返回的实际就是这个接口，调用相应的方法
+ * 我们本意是想要发起请求并且返回结果，那么应该是在crete做了这些事情，retorfit接口注解，那应该会在create里面去处理注解，然后用okhtpp去发起请求，然后返回封装为对于的result<T>
  * Created by itbird on 2022/7/4
  */
 public class ProxyActivity extends AppCompatActivity {

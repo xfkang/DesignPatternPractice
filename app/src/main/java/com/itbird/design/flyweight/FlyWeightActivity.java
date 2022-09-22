@@ -21,6 +21,7 @@ import com.itbird.design.flyweight.ticket.v2.TicketFactroyV2;
 
 /**
  * 测试享元模式
+ * 享元模式，定义，demo（买票，map，start，end），Message.obtain，eventbus，补充：eventbus源码的解析
  * Created by itbird on 2022/7/11
  */
 public class FlyWeightActivity extends AppCompatActivity {

@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.itbird.design.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,7 +23,6 @@ public class ListAdapterV3 implements BaseAdapterV3 {
     List<String> data;
     Context mContext;
     DataSetObservable dataSetObservable = new DataSetObservable();
-
     public ListAdapterV3(Context context) {
         mContext = context;
     }

@@ -15,6 +15,7 @@ import com.itbird.design.observer.demo.Observer;
 
 /**
  * 测试观察者模式
+ * 观察者模式，eventbus源码分析，asynctask源码分析，xjava源码分析
  * Created by itbird on 2022/6/9
  */
 public class ObserverActivity extends AppCompatActivity implements Observer {

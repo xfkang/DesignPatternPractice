@@ -19,6 +19,7 @@ import com.itbird.design.factory.storage.StorageFactroy;
 
 /**
  * 测试工厂模式
+ * 简单工厂、抽象工厂模式，实现方式演变，imageloader扩展，存储框架扩展，bitmapfactory，shareprefence源码分析
  * Created by itbird on 2022/6/9
  */
 public class FactoryActivity extends AppCompatActivity {

@@ -12,12 +12,14 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.itbird.design.R;
 import com.itbird.design.principle.imageloader.v3.ImageLoader;
 
 
 /**
  * 测试外观模式
+ * 外观模式，定义， 电话demo，Context源码，Glide内存泄露，补存：插件框架，Glide源码解读
  * Created by itbird on 2022/7/11
  */
 public class FacadeActivity extends AppCompatActivity {
@@ -44,7 +46,7 @@ public class FacadeActivity extends AppCompatActivity {
 
     private void viewGlideSource() {
         imageView = findViewById(R.id.imageview);
-        Glide.with(this).load("https://img-blog.csdn.net/20160903083245762").into(imageView);
+        Glide.with(this).load("https://img-blog.csdn.net/20160903083245762").diskCacheStrategy(DiskCacheStrategy.ALL).into(imageView);
         ImageLoader.getInstance(this).setImageView("https://img-blog.csdn.net/20160903083245762", imageView);
     }
 

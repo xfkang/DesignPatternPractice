@@ -13,12 +13,12 @@ public class LoginActivity extends BaseActivity {
     TextView textView;
 
     @Override
-    int getLayout() {
+    public int getLayout() {
         return R.layout.activity_main;
     }
 
     @Override
-    void init() {
+    public void init() {
         textView = findViewById(R.id.textview);
         button = findViewById(R.id.button);
         textView.setText(RegisterActivity.class.getSimpleName());

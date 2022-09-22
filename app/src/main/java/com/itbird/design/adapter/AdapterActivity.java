@@ -25,6 +25,8 @@ import java.util.List;
 
 /**
  * 适配器模式
+ * 适配器模式，介绍，角色，类适配（我们代码中），对象适配（常用），各自的作用，常用的是？好处、坏处，适配器一般是后续优化，而非设计引入
+ * listview.baseAdapter、RecycleView.Adapter---补充：,listview.onTouchEvent，Recycleview源码分析，主要是缓存机制
  * Created by itbird on 2022/6/20
  */
 public class AdapterActivity extends BaseActivity {

@@ -13,6 +13,7 @@ import com.itbird.design.builder.navigationbar.v1.NavigationBar;
 
 /**
  * 测试建造者模式
+ * 建造者模式，Dialog源码分析，windowmanager解析，activity、view、window三者关系，dialog、，区别
  * Created by itbird on 2022/6/9
  */
 public class BuilderActivity extends AppCompatActivity {

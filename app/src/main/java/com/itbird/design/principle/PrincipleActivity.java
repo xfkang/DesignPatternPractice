@@ -12,7 +12,7 @@ import com.itbird.design.utils.UIHandler;
 
 
 /**
- * 测试六大基本原则
+ * 面对六个基本原则，mvp演变，imageloader演变
  * Created by itbird on 2022/6/9
  */
 public class PrincipleActivity extends AppCompatActivity implements UIHandler.IHandler {
